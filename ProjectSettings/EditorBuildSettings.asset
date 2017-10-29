@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Tree.unity
+    path: Assets/Level 1/Scenes/Tree.unity
     guid: 6d6a2d2a9a60f684d919756fdd574df3
   - enabled: 1
-    path: Assets/Puzzle 1 (Beck(.unity
+    path: Assets/Level 1/Scenes/Puzzle 1 (Beck(.unity
     guid: 33380408feb92b6419d602a00b27413e

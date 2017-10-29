@@ -38,6 +38,7 @@ public class shooting : MonoBehaviour {
 			}
 					
 		}
+
 		if (Input.GetMouseButtonDown (1) && zoomed == false) {
 			mainCam.transform.position = camera2.transform.position; 
 			crosshair.SetActive (true);
