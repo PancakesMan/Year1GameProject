@@ -2505,7 +2505,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4044899485398900, guid: ab50396caaaa55548a0bdca54911431d, type: 2}
       propertyPath: m_LocalScale.z
-      value: 3.0347106
+      value: 1.0300856
       objectReference: {fileID: 0}
     - target: {fileID: 4044899485398900, guid: ab50396caaaa55548a0bdca54911431d, type: 2}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2714,6 +2714,11 @@ Prefab:
       propertyPath: m_TagString
       value: WoodBlockade
       objectReference: {fileID: 0}
+    - target: {fileID: 23654238596728690, guid: 4a0146829c952524c971b3ae7ee895ee,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 896a6351706cb024981e2601e626d132, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4a0146829c952524c971b3ae7ee895ee, type: 2}
   m_IsPrefabParent: 0
