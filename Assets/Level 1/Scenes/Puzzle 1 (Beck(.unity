@@ -511,6 +511,11 @@ Prefab:
       propertyPath: m_Name
       value: Plague Doctor
       objectReference: {fileID: 0}
+    - target: {fileID: 114294197369586940, guid: 425f688449032ba4d86e325620ec1ff5,
+        type: 2}
+      propertyPath: userHasControl
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 425f688449032ba4d86e325620ec1ff5, type: 2}
   m_IsPrefabParent: 0
@@ -2459,6 +2464,61 @@ Prefab:
     - target: {fileID: 4044899485398900, guid: ab50396caaaa55548a0bdca54911431d, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -11.964001
+      objectReference: {fileID: 0}
+    - target: {fileID: 198034135157868866, guid: ab50396caaaa55548a0bdca54911431d,
+        type: 2}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198034135157868866, guid: ab50396caaaa55548a0bdca54911431d,
+        type: 2}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198034135157868866, guid: ab50396caaaa55548a0bdca54911431d,
+        type: 2}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198034135157868866, guid: ab50396caaaa55548a0bdca54911431d,
+        type: 2}
+      propertyPath: randomSeed
+      value: 676087551
+      objectReference: {fileID: 0}
+    - target: {fileID: 198034135157868866, guid: ab50396caaaa55548a0bdca54911431d,
+        type: 2}
+      propertyPath: ColorModule.gradient.maxGradient.key0.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198034135157868866, guid: ab50396caaaa55548a0bdca54911431d,
+        type: 2}
+      propertyPath: ColorModule.gradient.maxGradient.key0.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198034135157868866, guid: ab50396caaaa55548a0bdca54911431d,
+        type: 2}
+      propertyPath: ColorModule.gradient.maxGradient.key0.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198034135157868866, guid: ab50396caaaa55548a0bdca54911431d,
+        type: 2}
+      propertyPath: ColorModule.gradient.maxGradient.ctime0
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198034135157868866, guid: ab50396caaaa55548a0bdca54911431d,
+        type: 2}
+      propertyPath: ColorModule.gradient.maxGradient.key1.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198034135157868866, guid: ab50396caaaa55548a0bdca54911431d,
+        type: 2}
+      propertyPath: ColorModule.gradient.maxGradient.key1.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198034135157868866, guid: ab50396caaaa55548a0bdca54911431d,
+        type: 2}
+      propertyPath: ColorModule.gradient.maxGradient.key1.b
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ab50396caaaa55548a0bdca54911431d, type: 2}
