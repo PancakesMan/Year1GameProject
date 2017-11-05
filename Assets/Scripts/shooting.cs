@@ -50,11 +50,11 @@ public class shooting : MonoBehaviour {
 		}
 
 		if (arrowCoated == true) {
-			moonGreen.SetActive (true);
+			//moonGreen.SetActive (true);
 			moonWhite.SetActive (false);
 		} else if (arrowCoated == false) {
 			moonWhite.SetActive (true); 
-			moonGreen.SetActive (false); 
+			//moonGreen.SetActive (false); 
 		}
 	}
 
