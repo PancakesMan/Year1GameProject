@@ -7,29 +7,27 @@ using UnityStandardAssets.Characters.ThirdPerson;
 
 public class DialogueTrigger : MonoBehaviour {
 
-
-
+    List<string> dialogToUse = new List<string>();
     public List<string> dialogueLines = new List<string>();
     public List<string> altDialogueLines = new List<string>();
-    List<string> dialogToUse = new List<string>();
     public bool altDialogueOption = false;
-
     public bool alreadyTriggered = false;
-    // Bellow, add your character controller name. e.g. CharControlCustom charController;
+    public float characterTimeout;
+
+    // Below, add your character controller name. e.g. CharControlCustom charController;
     ThirdPersonUserControl_Custom charUserControl;
     public Text dialogueBox;
-    int currentLine = 0;
-    bool currentlyActive;
-    float lastClickTime;
     public GameObject textBackground;
-    public static bool changeTextIf = false;
+
+    int currentLine = 0;
+    bool currentlyActive, cr_running = false;
 
     void OnTriggerEnter(Collider other)
     {
         Debug.Log("Trigger entered by " + other.gameObject);
         if (other.tag == "Player" && !alreadyTriggered)
         {
-            if (changeTextIf && altDialogueOption)
+            if (altDialogueOption)
             {
                 dialogToUse = altDialogueLines;
             }
@@ -37,43 +35,49 @@ public class DialogueTrigger : MonoBehaviour {
             {
                 dialogToUse = dialogueLines;
             }
+
             textBackground.SetActive(true);
             //Insert character controller name to dissable controls during dialogue 
             charUserControl = other.GetComponent<ThirdPersonUserControl_Custom>();
             if (charUserControl != null)
             {
                 charUserControl.userHasControl = false;
-               // charUserControl.enabled = false;
-            }            //charController.enabled = false;
-            dialogueBox.text = dialogToUse[0];
-            currentLine = 0;
+            }
+
+            StartCoroutine(DisplayText(dialogToUse[currentLine++]));
             alreadyTriggered = true;
             currentlyActive = true;
-            //Input system seems to be bugging out and giving getButtonDown message over multiple frames
-            //putting in hacky time check to set a minimum time between dialogue lines to get around this
-            lastClickTime = Time.time;
         }
     }
 
     void OnTriggerStay(Collider other)
     {
-        if (Input.GetButtonDown("Fire1") && other.tag == "Player" && currentlyActive && (Time.time > lastClickTime + 0.1f))
+        if (Input.GetButtonDown("Fire1") && other.tag == "Player" && currentlyActive /*&& (Time.time > lastClickTime + 0.1f)*/ &&!cr_running)
         {
-            lastClickTime = Time.time;
+            dialogueBox.text = "";
             Debug.Log("next line triggered by " + other.gameObject + " at time " + Time.time);
-            currentLine++;
             if (dialogToUse.Count > currentLine)
             {
-                dialogueBox.text = dialogToUse[currentLine];
+                StartCoroutine(DisplayText(dialogToUse[currentLine++]));
             }
             else
             {
                 textBackground.SetActive(false);
-                dialogueBox.text = "";
                 charUserControl.userHasControl = true;
                 currentlyActive = false;
             }
         }
+    }
+
+    IEnumerator DisplayText(string text)
+    {
+        cr_running = true;
+        foreach(char c in text)
+        {
+            dialogueBox.text += c;
+            yield return new WaitForSecondsRealtime(characterTimeout);
+        }
+        cr_running = false;
     }
 
 }
