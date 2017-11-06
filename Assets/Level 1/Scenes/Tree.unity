@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0056256466, g: 0.005595357, b: 0.0056256466, a: 1}
+  m_IndirectSpecularColor: {r: 0.00562342, g: 0.0055865585, b: 0.00562342, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -2255,6 +2255,16 @@ Prefab:
       propertyPath: m_StationaryTurnSpeed
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114286053499517120, guid: 425f688449032ba4d86e325620ec1ff5,
+        type: 2}
+      propertyPath: moonWhite
+      value: 
+      objectReference: {fileID: 903467183}
+    - target: {fileID: 114286053499517120, guid: 425f688449032ba4d86e325620ec1ff5,
+        type: 2}
+      propertyPath: moonGreen
+      value: 
+      objectReference: {fileID: 903467183}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 425f688449032ba4d86e325620ec1ff5, type: 2}
   m_IsPrefabParent: 0
