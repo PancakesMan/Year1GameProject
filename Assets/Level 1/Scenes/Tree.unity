@@ -1347,6 +1347,7 @@ MonoBehaviour:
   altDialogueLines: []
   altDialogueOption: 0
   alreadyTriggered: 0
+  characterTimeout: 0
   dialogueBox: {fileID: 256366919}
   textBackground: {fileID: 1406879476}
 --- !u!23 &582114836
@@ -2651,6 +2652,7 @@ MonoBehaviour:
   altDialogueLines: []
   altDialogueOption: 0
   alreadyTriggered: 0
+  characterTimeout: 0
   dialogueBox: {fileID: 256366919}
   textBackground: {fileID: 1406879476}
 --- !u!23 &1000847691
@@ -2712,7 +2714,7 @@ Transform:
   m_GameObject: {fileID: 1000847688}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 38.75, y: 10.81, z: 46.47}
-  m_LocalScale: {x: 2.2328906, y: 1.8562703, z: 1}
+  m_LocalScale: {x: 3.0390975, y: 1.8562703, z: 3.2010434}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -3250,6 +3252,7 @@ MonoBehaviour:
   altDialogueLines: []
   altDialogueOption: 0
   alreadyTriggered: 0
+  characterTimeout: 0
   dialogueBox: {fileID: 256366919}
   textBackground: {fileID: 1406879476}
 --- !u!23 &1260055976
