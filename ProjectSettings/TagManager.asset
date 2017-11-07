@@ -7,7 +7,6 @@ TagManager:
   - Boulder
   - Egg
   - WoodBlockade
-  - Crossbow
   layers:
   - Default
   - TransparentFX
