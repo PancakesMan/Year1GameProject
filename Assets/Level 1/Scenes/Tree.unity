@@ -2396,6 +2396,10 @@ Prefab:
       propertyPath: moonGreen
       value: 
       objectReference: {fileID: 903467183}
+    - target: {fileID: 1951067089900420, guid: 425f688449032ba4d86e325620ec1ff5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 425f688449032ba4d86e325620ec1ff5, type: 2}
   m_IsPrefabParent: 0
