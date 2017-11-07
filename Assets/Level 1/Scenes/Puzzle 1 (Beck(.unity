@@ -250,7 +250,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 25748081}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.49082756, z: -1.277051}
+  m_LocalPosition: {x: -0, y: -1.09, z: -1.28}
   m_LocalScale: {x: 3.035931, y: 3.035931, z: 3.035931}
   m_Children: []
   m_Father: {fileID: 1638460646}
@@ -378,7 +378,7 @@ Transform:
   m_LocalScale: {x: 2.276252, y: 2.2762527, z: 2.2762527}
   m_Children: []
   m_Father: {fileID: 485990007}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -11.978001, y: 0, z: 0}
 --- !u!1001 &35020677
 Prefab:
@@ -1173,6 +1173,7 @@ MonoBehaviour:
   altDialogueLines: []
   altDialogueOption: 0
   alreadyTriggered: 0
+  characterTimeout: 0
   dialogueBox: {fileID: 480314401}
   textBackground: {fileID: 527000037}
 --- !u!23 &251298683
@@ -1340,7 +1341,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 309207233}
   m_LocalRotation: {x: 0.24374712, y: -0.6234533, z: -0.24878092, w: 0.700001}
-  m_LocalPosition: {x: -23.62, y: -11.52, z: -10.44}
+  m_LocalPosition: {x: -23.43, y: -8.24, z: -7.62}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1638460646}
@@ -1860,8 +1861,8 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 24
+    m_Font: {fileID: 12800000, guid: 20fed97084b6c8247a615e27f51a6ade, type: 3}
+    m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -1926,8 +1927,8 @@ Transform:
   m_LocalPosition: {x: 51.841167, y: 32.54506, z: 66.28601}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1540106849}
   - {fileID: 25890423}
+  - {fileID: 1540106849}
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4629,7 +4630,7 @@ Transform:
   m_LocalScale: {x: 2.276252, y: 2.2762527, z: 2.2762527}
   m_Children: []
   m_Father: {fileID: 485990007}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -11.978001, y: 0, z: 0}
 --- !u!1 &1551337211
 GameObject:
@@ -5703,7 +5704,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1890263468}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.49082756, z: 1.3058257}
+  m_LocalPosition: {x: 0, y: -0.02, z: 1.31}
   m_LocalScale: {x: 3.035931, y: 3.035931, z: 3.035931}
   m_Children: []
   m_Father: {fileID: 1638460646}
@@ -5953,7 +5954,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.27, y: 2.93, z: 2.08}
+  m_Size: {x: 3.7, y: 2.93, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2069233730
 GameObject:
@@ -5990,6 +5991,7 @@ MonoBehaviour:
   altDialogueLines: []
   altDialogueOption: 0
   alreadyTriggered: 0
+  characterTimeout: 0
   dialogueBox: {fileID: 480314401}
   textBackground: {fileID: 527000037}
 --- !u!23 &2069233732
