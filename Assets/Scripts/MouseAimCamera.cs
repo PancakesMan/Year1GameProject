@@ -31,9 +31,6 @@ using UnityEngine;
 		transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, vertical);
 
         // Vertical, Horizontal
-        if (target.tag == "Player")
-            target.transform.Rotate(0, horizontal, 0);
-        else
-		    target.transform.Rotate(vertical, 0, 0);
+		target.transform.Rotate(vertical, 0, 0);
 	}
 }
