@@ -1347,6 +1347,7 @@ MonoBehaviour:
   altDialogueLines: []
   altDialogueOption: 0
   alreadyTriggered: 0
+  characterTimeout: 0
   dialogueBox: {fileID: 256366919}
   textBackground: {fileID: 1406879476}
 --- !u!23 &582114836
@@ -2253,8 +2254,18 @@ Prefab:
     - target: {fileID: 114304540027057912, guid: 425f688449032ba4d86e325620ec1ff5,
         type: 2}
       propertyPath: m_StationaryTurnSpeed
-      value: 0
+      value: 45
       objectReference: {fileID: 0}
+    - target: {fileID: 114286053499517120, guid: 425f688449032ba4d86e325620ec1ff5,
+        type: 2}
+      propertyPath: moonWhite
+      value: 
+      objectReference: {fileID: 903467183}
+    - target: {fileID: 114286053499517120, guid: 425f688449032ba4d86e325620ec1ff5,
+        type: 2}
+      propertyPath: moonGreen
+      value: 
+      objectReference: {fileID: 903467183}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 425f688449032ba4d86e325620ec1ff5, type: 2}
   m_IsPrefabParent: 0
@@ -2641,6 +2652,7 @@ MonoBehaviour:
   altDialogueLines: []
   altDialogueOption: 0
   alreadyTriggered: 0
+  characterTimeout: 0
   dialogueBox: {fileID: 256366919}
   textBackground: {fileID: 1406879476}
 --- !u!23 &1000847691
@@ -2702,7 +2714,7 @@ Transform:
   m_GameObject: {fileID: 1000847688}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 38.75, y: 10.81, z: 46.47}
-  m_LocalScale: {x: 2.2328906, y: 1.8562703, z: 1}
+  m_LocalScale: {x: 3.0390975, y: 1.8562703, z: 3.2010434}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -3131,6 +3143,19 @@ MonoBehaviour:
   crossbow: {fileID: 1531322256}
   thirdTalking: {fileID: 1000847688}
   fog1: {fileID: 1801562063}
+--- !u!114 &1225704634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1225704625}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bf71e0629af7924392819d1382557e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1225704625}
+  rotateSpeed: 10
 --- !u!1001 &1240608669
 Prefab:
   m_ObjectHideFlags: 0
@@ -3240,6 +3265,7 @@ MonoBehaviour:
   altDialogueLines: []
   altDialogueOption: 0
   alreadyTriggered: 0
+  characterTimeout: 0
   dialogueBox: {fileID: 256366919}
   textBackground: {fileID: 1406879476}
 --- !u!23 &1260055976
