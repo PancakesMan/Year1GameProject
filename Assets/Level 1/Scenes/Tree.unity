@@ -3143,19 +3143,6 @@ MonoBehaviour:
   crossbow: {fileID: 1531322256}
   thirdTalking: {fileID: 1000847688}
   fog1: {fileID: 1801562063}
---- !u!114 &1225704634
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1225704625}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bf71e0629af7924392819d1382557e0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 1225704625}
-  rotateSpeed: 10
 --- !u!1001 &1240608669
 Prefab:
   m_ObjectHideFlags: 0
@@ -4516,7 +4503,6 @@ GameObject:
   - component: {fileID: 1672688995}
   - component: {fileID: 1672688994}
   - component: {fileID: 1672688993}
-  - component: {fileID: 1672688997}
   - component: {fileID: 1672688998}
   m_Layer: 0
   m_Name: Exit Box
@@ -4589,17 +4575,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1672688997
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1672688992}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43f6cb68c4655534a9e9e92bb32bf2c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1672688998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4608,9 +4583,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1672688992}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d4b562a32747c74ea893e85f08e377b, type: 3}
+  m_Script: {fileID: 11500000, guid: 3c4048fa831d54245b94f80a66363bc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextScene: {fileID: 102900000, guid: 33380408feb92b6419d602a00b27413e, type: 3}
 --- !u!1001 &1698994706
 Prefab:
   m_ObjectHideFlags: 0
