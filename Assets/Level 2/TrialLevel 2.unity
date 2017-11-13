@@ -1797,7 +1797,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4907557261043762, guid: 425f688449032ba4d86e325620ec1ff5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 101.28
+      value: 101.94
       objectReference: {fileID: 0}
     - target: {fileID: 4907557261043762, guid: 425f688449032ba4d86e325620ec1ff5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1805,7 +1805,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4907557261043762, guid: 425f688449032ba4d86e325620ec1ff5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 29.19
+      value: 43.04
       objectReference: {fileID: 0}
     - target: {fileID: 4907557261043762, guid: 425f688449032ba4d86e325620ec1ff5, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1854,7 +1854,7 @@ Prefab:
     - target: {fileID: 114816007739315816, guid: 425f688449032ba4d86e325620ec1ff5,
         type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114294197369586940, guid: 425f688449032ba4d86e325620ec1ff5,
         type: 2}
@@ -2758,6 +2758,37 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1310944270}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1328937642 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1605176524211130, guid: ab50396caaaa55548a0bdca54911431d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1730172156}
+--- !u!114 &1328937646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1328937642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c80eb724ae152f64f9c3043e182cc3fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fullWarningIntensity: 1
+  fullWarningSmoothness: 1
+  postProfileToAlter: {fileID: 11400000, guid: 7ed24c2812d199544bc8b6e0bbeba6c4, type: 2}
+--- !u!135 &1328937647
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1328937642}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1369226429 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4771159435693916, guid: 08a2034c7c0d79144af8bf7c233ae4bb,
