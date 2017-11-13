@@ -27,11 +27,11 @@ public class shooting : MonoBehaviour {
 			
 				if (hit.collider.tag == "Boulder") {
 					Debug.Log ("You shot the boulder!");
-                    hit.rigidbody.useGravity = true;
+					boulder.useGravity = true;  
 					Invoke ("TreeFalling", 3); 
 				}
 				if (hit.collider.tag == "WoodBlockade" && arrowCoated == true) {
-                    hit.collider.gameObject.SetActive(false);
+					woodBlockade.SetActive (false); 
 				}
 
 				arrowCoated = false;

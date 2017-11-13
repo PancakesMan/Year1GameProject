@@ -10,12 +10,9 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         private ThirdPersonCharacter m_Character; // A reference to the ThirdPersonCharacter on the object
         private Transform m_Cam;                  // A reference to the main camera in the scenes transform
         private Vector3 m_CamForward;             // The current forward direction of the camera
-        private Vector3 m_Move;                   // the world-relative desired move direction, calculated from the camForward and user input.
-        private bool m_Jump;                      
-		private bool m_crouching = false;
+        private Vector3 m_Move;
+        private bool m_Jump;                      // the world-relative desired move direction, calculated from the camForward and user input.
         public bool userHasControl = true;
-
-        float crouch_cd = 0.25f;
 
 
         private void Start()
@@ -49,18 +46,10 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         // Fixed update is called in sync with physics
         private void FixedUpdate()
         {
-            crouch_cd -= Time.deltaTime;
-
             // read inputs
             float h = CrossPlatformInputManager.GetAxis("Horizontal");
             float v = CrossPlatformInputManager.GetAxis("Vertical");
-
-			if (Input.GetKey (KeyCode.LeftControl) && crouch_cd < 0.0f) {
-				m_crouching = !m_crouching;
-                crouch_cd = 0.25f;
-			}
-
-            if (Input.GetKey(KeyCode.LeftShift)) m_Move *= 0.5f;
+            bool crouch = Input.GetKey(KeyCode.C);
 
             // calculate move direction to pass to character
             if (m_Cam != null)
@@ -74,8 +63,20 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                 // we use world-relative directions in the case of no main camera
                 m_Move = v * Vector3.forward + h * Vector3.right;
             }
+#if !MOBILE_INPUT
+            // walk speed multiplier
+            if (Input.GetKey(KeyCode.LeftShift)) m_Move *= 0.5f;
+#endif
 
-		    m_Character.Move(m_Move * (userHasControl ? 1 : 0), m_crouching, m_Jump && userHasControl);
+            // pass all parameters to the character control script
+            if (userHasControl)
+            {
+                m_Character.Move(m_Move, crouch, m_Jump);
+            }
+            else if (!userHasControl)
+            {
+                m_Character.Move(Vector3.zero, false, false);
+            }
             m_Jump = false;
         }
     }
