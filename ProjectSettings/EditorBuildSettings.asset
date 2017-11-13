@@ -5,15 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Level 1/Scenes/Tree.unity
     guid: 6d6a2d2a9a60f684d919756fdd574df3
-  - enabled: 0
+  - enabled: 1
     path: Assets/Level 1/Scenes/Puzzle 1 (Beck(.unity
     guid: 33380408feb92b6419d602a00b27413e
-  - enabled: 1
-    path: Assets/Level 2/QuitOrContinueScreen.unity
-    guid: ba3732c9a3388ee4cb697df17450792f
-  - enabled: 1
-    path: Assets/Level 2/TrialLevel 2.unity
-    guid: c0fea3b0fa83ebe44b248a98f7b3fdae
