@@ -1,17 +1,20 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
-public class ChangeScene : MonoBehaviour {
+public class ChangeScene : MonoBehaviour {]
 
-	public void ChangeToScene(string sceneName) {
+	public void ChangeToScene(string sceneName)
+    {
 		SceneManager.LoadScene (sceneName);
 	}
 
-	public void ResetLevel (){
+	public void ResetLevel ()
+    {
 		SceneManager.LoadScene (SceneManager.GetActiveScene().name);
 	}
 
-	public void QuitGame (){
+	public void QuitGame ()
+    {
 		Application.Quit ();
 	}
 }
