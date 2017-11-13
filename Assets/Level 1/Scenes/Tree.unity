@@ -654,12 +654,12 @@ Prefab:
     - target: {fileID: 198034135157868866, guid: ab50396caaaa55548a0bdca54911431d,
         type: 2}
       propertyPath: prewarm
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 198034135157868866, guid: ab50396caaaa55548a0bdca54911431d,
         type: 2}
       propertyPath: randomSeed
-      value: 113227963
+      value: -1737079217
       objectReference: {fileID: 0}
     - target: {fileID: 4044899485398900, guid: ab50396caaaa55548a0bdca54911431d, type: 2}
       propertyPath: m_LocalScale.x
@@ -696,6 +696,11 @@ Prefab:
     - target: {fileID: 1605176524211130, guid: ab50396caaaa55548a0bdca54911431d, type: 2}
       propertyPath: m_Name
       value: Particle System (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 198034135157868866, guid: ab50396caaaa55548a0bdca54911431d,
+        type: 2}
+      propertyPath: looping
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ab50396caaaa55548a0bdca54911431d, type: 2}
@@ -5303,6 +5308,32 @@ Transform:
   m_PrefabParentObject: {fileID: 4044899485398900, guid: ab50396caaaa55548a0bdca54911431d,
     type: 2}
   m_PrefabInternal: {fileID: 259671629}
+--- !u!114 &1801562067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1801562063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41eb46fb4c1ac3d4db102d2ede8f7adc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fullWarningIntensity: 1
+  fullWarningSmoothness: 1
+  postProfileToAlter: {fileID: 11400000, guid: 7ed24c2812d199544bc8b6e0bbeba6c4, type: 2}
+--- !u!135 &1801562068
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1801562063}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1859903661
 Prefab:
   m_ObjectHideFlags: 0
