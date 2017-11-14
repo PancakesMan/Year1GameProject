@@ -45,10 +45,13 @@ public class shooting : MonoBehaviour {
 			mainCam.transform.position = camera2.transform.position; 
 			crosshair.SetActive (true);
 			zoomed = true;
+
 		} else if (Input.GetMouseButtonDown (1) && zoomed == true) {
 			mainCam.transform.position = camera1.transform.position; 
 			crosshair.SetActive (false);
 			zoomed = false;
+
+
 		}
 
 		if (arrowCoated == true) {

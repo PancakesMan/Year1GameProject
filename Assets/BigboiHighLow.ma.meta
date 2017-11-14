@@ -1,0 +1,132 @@
+fileFormatVersion: 2
+guid: 20af41264b4e00a4ebc25f8b31c471d6
+timeCreated: 1510633727
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: BigBoi_Finis:Group1661
+    100002: BigBoi_High
+    100004: BigBoi_High_MeshPart0
+    100006: BigBoi_High_MeshPart1
+    100008: BigBoi_High_MeshPart2
+    100010: BigBoi_High_MeshPart3
+    100012: BigBoi_High_MeshPart4
+    100014: BigBoi_Jaw_High
+    100016: BigBoi_Jaw_Low
+    100018: BigBoi_Low
+    100020: //RootNode
+    400000: BigBoi_Finis:Group1661
+    400002: BigBoi_High
+    400004: BigBoi_High_MeshPart0
+    400006: BigBoi_High_MeshPart1
+    400008: BigBoi_High_MeshPart2
+    400010: BigBoi_High_MeshPart3
+    400012: BigBoi_High_MeshPart4
+    400014: BigBoi_Jaw_High
+    400016: BigBoi_Jaw_Low
+    400018: BigBoi_Low
+    400020: //RootNode
+    2300000: BigBoi_Finis:Group1661
+    2300002: BigBoi_High_MeshPart0
+    2300004: BigBoi_High_MeshPart1
+    2300006: BigBoi_High_MeshPart2
+    2300008: BigBoi_High_MeshPart3
+    2300010: BigBoi_High_MeshPart4
+    2300012: BigBoi_Jaw_High
+    2300014: BigBoi_Jaw_Low
+    2300016: BigBoi_Low
+    3300000: BigBoi_Finis:Group1661
+    3300002: BigBoi_High_MeshPart0
+    3300004: BigBoi_High_MeshPart1
+    3300006: BigBoi_High_MeshPart2
+    3300008: BigBoi_High_MeshPart3
+    3300010: BigBoi_High_MeshPart4
+    3300012: BigBoi_Jaw_High
+    3300014: BigBoi_Jaw_Low
+    3300016: BigBoi_Low
+    4300000: BigBoi_Finis:Group1661
+    4300002: BigBoi_Low
+    4300004: BigBoi_Jaw_Low
+    4300006: BigBoi_High_MeshPart0
+    4300008: BigBoi_High_MeshPart1
+    4300010: BigBoi_High_MeshPart2
+    4300012: BigBoi_High_MeshPart3
+    4300014: BigBoi_High_MeshPart4
+    4300016: BigBoi_Jaw_High
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
