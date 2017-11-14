@@ -45,4 +45,15 @@ public class warningVignetteRegion : MonoBehaviour {
         }
     }
 
+    //THIS IS VERY HACKY - GAME WOULD BE BETTER WITH A PROPER POST EFFECTS MANGER
+    //ADD TO TO-DO LIST
+
+    private void OnDestroy()
+    {
+        var vignette = postProfileToAlter.vignette.settings;
+        vignette.intensity = origVignetteIntensity;
+        vignette.smoothness = origVignetteSmoothness;
+        postProfileToAlter.vignette.settings = vignette;
+    }
+
 }

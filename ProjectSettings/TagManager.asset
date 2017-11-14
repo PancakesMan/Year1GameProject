@@ -8,6 +8,8 @@ TagManager:
   - Egg
   - WoodBlockade
   - Crossbow
+  - DeathMenu
+  - MainCanvas
   layers:
   - Default
   - TransparentFX
