@@ -13,7 +13,8 @@ public class shooting : MonoBehaviour {
 	public GameObject crosshair; 
 	public bool zoomed = false;
 	public bool arrowCoated = false; 
-	public GameObject woodBlockade; 
+	public GameObject woodBlockade;
+    public GameObject collisionToggle;
 	public GameObject moonWhite;
 	public GameObject moonGreen; 
 
@@ -70,8 +71,9 @@ public class shooting : MonoBehaviour {
 		
 	void TreeFalling()
 	{
-		tree.SetBool ("treeFalling", true); 
-	}
+		tree.SetBool ("treeFalling", true);
+        collisionToggle.SetActive(false);
+    }
 
 	}
 

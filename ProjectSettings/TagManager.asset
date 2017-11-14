@@ -7,6 +7,8 @@ TagManager:
   - Boulder
   - Egg
   - WoodBlockade
+  - Fire
+  - Collision Toggle
   layers:
   - Default
   - TransparentFX
