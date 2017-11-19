@@ -24,13 +24,13 @@ using UnityEngine;
 	void LateUpdate() {
 		float horizontal = Input.GetAxis("Mouse X") * rotateSpeed;
 		horizontal = Mathf.Clamp (horizontal, -5, 5);
-		transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, horizontal);
+		target.transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, horizontal);
 
 		float vertical = Input.GetAxis("Mouse Y") * -rotateSpeed;
 		vertical = Mathf.Clamp (vertical, -5, 5);
-		transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, vertical);
+		target.transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, vertical);
 
         // Vertical, Horizontal
-		target.transform.Rotate(vertical, 0, 0);
+		target.transform.Rotate(vertical, horizontal, 0);
 	}
 }
