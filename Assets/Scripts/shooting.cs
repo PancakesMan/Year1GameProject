@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.AI;
 
 public class shooting : MonoBehaviour {
 
@@ -27,11 +27,13 @@ public class shooting : MonoBehaviour {
 			
 				if (hit.collider.tag == "Boulder") {
 					Debug.Log ("You shot the boulder!");
-                    hit.rigidbody.useGravity = true;
+					boulder.useGravity = true;  
+					hit.rigidbody.useGravity = true;
 					Invoke ("TreeFalling", 3); 
 				}
 				if (hit.collider.tag == "WoodBlockade" && arrowCoated == true) {
-                    hit.collider.gameObject.SetActive(false);
+					woodBlockade.SetActive (false); 
+					hit.collider.gameObject.SetActive(false);
 				}
 
 				arrowCoated = false;
@@ -43,18 +45,21 @@ public class shooting : MonoBehaviour {
 			mainCam.transform.position = camera2.transform.position; 
 			crosshair.SetActive (true);
 			zoomed = true;
+
 		} else if (Input.GetMouseButtonDown (1) && zoomed == true) {
 			mainCam.transform.position = camera1.transform.position; 
 			crosshair.SetActive (false);
 			zoomed = false;
+
+
 		}
 
 		if (arrowCoated == true) {
-			//moonGreen.SetActive (true);
+			moonGreen.SetActive (true);
 			moonWhite.SetActive (false);
 		} else if (arrowCoated == false) {
 			moonWhite.SetActive (true); 
-			//moonGreen.SetActive (false); 
+			moonGreen.SetActive (false); 
 		}
 	}
 
