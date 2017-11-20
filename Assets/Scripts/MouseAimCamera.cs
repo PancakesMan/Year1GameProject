@@ -5,7 +5,7 @@ using UnityEngine;
 	public class MouseAimCamera : MonoBehaviour {
 		
 	public GameObject target;
-	public float rotateSpeed = 5;
+	public float rotateSpeed = 10;
 
 
 		void Start() {
@@ -24,12 +24,13 @@ using UnityEngine;
 	void LateUpdate() {
 		float horizontal = Input.GetAxis("Mouse X") * rotateSpeed;
 		horizontal = Mathf.Clamp (horizontal, -5, 5);
-		target.transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, horizontal);
+		transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, horizontal);
 
 		float vertical = Input.GetAxis("Mouse Y") * -rotateSpeed;
 		vertical = Mathf.Clamp (vertical, -5, 5);
-		target.transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, vertical);
+		transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, vertical);
 
-		target.transform.Rotate(vertical, horizontal, 0);
+        // Vertical, Horizontal
+		target.transform.Rotate(vertical, 0, 0);
 	}
 }

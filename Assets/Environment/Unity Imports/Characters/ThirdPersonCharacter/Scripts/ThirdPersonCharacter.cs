@@ -5,8 +5,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 	[RequireComponent(typeof(Rigidbody))]
 	[RequireComponent(typeof(CapsuleCollider))]
 	[RequireComponent(typeof(Animator))]
-    [RequireComponent(typeof(AudioSource))]
-    public class ThirdPersonCharacter : MonoBehaviour
+	public class ThirdPersonCharacter : MonoBehaviour
 	{
 		[SerializeField] float m_MovingTurnSpeed = 360;
 		[SerializeField] float m_StationaryTurnSpeed = 180;
@@ -16,15 +15,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		[SerializeField] float m_MoveSpeedMultiplier = 1f;
 		[SerializeField] float m_AnimSpeedMultiplier = 1f;
 		[SerializeField] float m_GroundCheckDistance = 0.1f;
-        [SerializeField]
-        private AudioClip[] m_FootstepSounds;    // an array of footstep sounds that will be randomly selected from.
-        [SerializeField]
-        private AudioClip m_JumpSound;           // the sound played when character leaves the ground.
-        [SerializeField]
-        private AudioClip m_LandSound;           // the sound played when character touches back on ground.
 
-        private AudioSource m_AudioSource;
-        Rigidbody m_Rigidbody;
+		Rigidbody m_Rigidbody;
 		Animator m_Animator;
 		bool m_IsGrounded;
 		float m_OrigGroundCheckDistance;
@@ -206,25 +198,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			}
 		}
 
-        
-            private void PlayFootStepAudio()
-        {
-            if (!m_IsGrounded)
-            {
-                return;
-            }
-            // pick & play a random footstep sound from the array,
-            // excluding sound at index 0
-            int n = Random.Range(1, m_FootstepSounds.Length);
-            m_AudioSource.clip = m_FootstepSounds[n];
-            m_AudioSource.PlayOneShot(m_AudioSource.clip);
-            // move picked sound to index 0 so it's not picked next time
-            m_FootstepSounds[n] = m_FootstepSounds[0];
-            m_FootstepSounds[0] = m_AudioSource.clip;
-        }
 
-
-        void CheckGroundStatus()
+		void CheckGroundStatus()
 		{
 			RaycastHit hitInfo;
 #if UNITY_EDITOR
