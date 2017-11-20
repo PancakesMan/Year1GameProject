@@ -12,6 +12,7 @@ public class DeathMenuScript : MonoBehaviour{
         Debug.Log("Player has entered trigger");
         {
             deathMenu.SetActive(true);
+            Screen.lockCursor = false;
         }
     }
 

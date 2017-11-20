@@ -11,15 +11,16 @@ using UnityEngine;
 		void Start() {
 			transform.parent = target.transform;
 			transform.LookAt(target.transform);
-		}
+        Screen.lockCursor = true;
+    }
 
 	void Update()
 	{
-		if (Input.GetKey(KeyCode.Escape))
-			Screen.lockCursor = false;
-		else
-			Screen.lockCursor = true;
-	}
+		//if (Input.GetKey(KeyCode.Escape))
+			//Screen.lockCursor = false;
+		//else
+           // Screen.lockCursor = true;
+    }
 
 	void LateUpdate() {
 		float horizontal = Input.GetAxis("Mouse X") * rotateSpeed;
