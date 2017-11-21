@@ -43,7 +43,7 @@ public class PatrolScript : MonoBehaviour
 
     void NavigateTo()
     {
-        Vector3 targetDirection = player.GetComponent<CapsuleCollider>().transform.position - transform.position;
+        Vector3 targetDirection = player.transform.position - transform.position;
         float angleToPlayer = Vector3.Angle(targetDirection, transform.forward);
 
         if (angleToPlayer < viewingAngle * 0.5f)
