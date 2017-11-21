@@ -601,9 +601,9 @@ PlayerSettings:
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: e769c2ee-79ce-4780-80a7-7b7d71e74dc0
+  cloudProjectId: b902ef00-2e9d-4799-b832-40ae20025db3
   projectName: Production
-  organizationId: crepeboy
+  organizationId: neloangelo320
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
