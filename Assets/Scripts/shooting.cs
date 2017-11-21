@@ -8,13 +8,16 @@ public class shooting : MonoBehaviour {
 	public Camera mainCam;
 	public GameObject camera1;
 	public GameObject camera2;
-	public Rigidbody boulder; 
+
 	public Animator tree;
 	public GameObject crosshair; 
+
 	public bool zoomed = false;
 	public bool arrowCoated = false; 
-	public GameObject woodBlockade;
+
+
     public GameObject collisionToggle;
+
 	public GameObject moonWhite;
 	public GameObject moonGreen; 
 
@@ -28,12 +31,11 @@ public class shooting : MonoBehaviour {
 			
 				if (hit.collider.tag == "Boulder") {
 					Debug.Log ("You shot the boulder!");
-					boulder.useGravity = true;  
 					hit.rigidbody.useGravity = true;
 					Invoke ("TreeFalling", 3); 
+
 				}
 				if (hit.collider.tag == "WoodBlockade" && arrowCoated == true) {
-					woodBlockade.SetActive (false); 
 					hit.collider.gameObject.SetActive(false);
 				}
 

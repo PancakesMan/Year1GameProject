@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: d303f6aa1672d0c4c81d679847364845
-timeCreated: 1511142143
+guid: 2dfcdcf5a0eeab94298e7fa69832e049
+timeCreated: 1511223148
 licenseType: Pro
 ModelImporter:
   serializedVersion: 21
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    100000: //RootNode
+    400000: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: polySurface384
+    9500000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
@@ -32,7 +38,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 50
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
