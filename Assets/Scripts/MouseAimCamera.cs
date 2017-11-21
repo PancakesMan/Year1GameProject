@@ -8,10 +8,12 @@ using UnityEngine;
 	public float rotateSpeed = 10;
 
 
-		void Start() {
-			transform.parent = target.transform;
-			transform.LookAt(target.transform);
-        Screen.lockCursor = true;
+	void Start() {
+		transform.parent = target.transform;
+		transform.LookAt(target.transform);
+
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
 	void Update()
