@@ -3129,6 +3129,18 @@ GameObject:
   m_PrefabParentObject: {fileID: 1786346486868788, guid: 425f688449032ba4d86e325620ec1ff5,
     type: 2}
   m_PrefabInternal: {fileID: 917969042}
+--- !u!114 &1225704626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1225704625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d04bc50e943ad1646b8a4e5b80dc5c83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  userHasControl: 1
 --- !u!114 &1225704633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4504,6 +4516,7 @@ GameObject:
   - component: {fileID: 1672688994}
   - component: {fileID: 1672688993}
   - component: {fileID: 1672688998}
+  - component: {fileID: 1672688997}
   m_Layer: 0
   m_Name: Exit Box
   m_TagString: Untagged
@@ -4575,6 +4588,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1672688997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1672688992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23069b58648b824498b60d37db12bcb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextScene: {fileID: 102900000, guid: 33380408feb92b6419d602a00b27413e, type: 3}
 --- !u!114 &1672688998
 MonoBehaviour:
   m_ObjectHideFlags: 0
