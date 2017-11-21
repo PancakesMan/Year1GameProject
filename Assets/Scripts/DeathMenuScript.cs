@@ -9,11 +9,12 @@ public class DeathMenuScript : MonoBehaviour{
    
     public void OnTriggerEnter(Collider other){
         if (other.tag == "Player")
-        Debug.Log("Player has entered trigger");
         {
+            Debug.Log("Player has entered trigger");
+
             deathMenu.SetActive(true);
-            Screen.lockCursor = false;
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
     }
-
 }

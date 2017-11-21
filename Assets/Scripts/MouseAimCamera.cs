@@ -8,10 +8,12 @@ using UnityEngine;
 	public float rotateSpeed = 10;
 
 
-		void Start() {
-			transform.parent = target.transform;
-			transform.LookAt(target.transform);
-        Screen.lockCursor = true;
+	void Start() {
+		transform.parent = target.transform;
+		transform.LookAt(target.transform);
+
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
 	void Update()
@@ -32,6 +34,6 @@ using UnityEngine;
 		transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, vertical);
 
         // Vertical, Horizontal
-		target.transform.Rotate(vertical, 0, 0);
+		target.transform.Rotate(vertical, horizontal, 0);
 	}
 }

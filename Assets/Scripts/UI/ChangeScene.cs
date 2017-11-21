@@ -8,6 +8,11 @@ public class ChangeScene : MonoBehaviour {
 		SceneManager.LoadScene (sceneName);
 	}
 
+    public void ChangeToScene(int index)
+    {
+        SceneManager.LoadScene(index);
+    }
+
 	public void ResetLevel ()
     {
 		SceneManager.LoadScene (SceneManager.GetActiveScene().name);
