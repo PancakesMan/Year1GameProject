@@ -7,10 +7,11 @@ using UnityEngine;
 	public GameObject target;
 	public float rotateSpeed = 10;
 
+    public float LookLeftRight, LookUpDown;
 
 	void Start() {
 		transform.parent = target.transform;
-		transform.LookAt(target.transform);
+		//transform.LookAt(target.transform);
 
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
@@ -18,22 +19,26 @@ using UnityEngine;
 
 	void Update()
 	{
-		//if (Input.GetKey(KeyCode.Escape))
-			//Screen.lockCursor = false;
-		//else
-           // Screen.lockCursor = true;
+        LookLeftRight += Input.GetAxis("Mouse X") * rotateSpeed * Time.deltaTime;
+        LookUpDown += Input.GetAxis("Mouse Y") * rotateSpeed * Time.deltaTime;
+
+        LookLeftRight = Mathf.Clamp(LookLeftRight, -45, 45);
+        LookUpDown = Mathf.Clamp(LookUpDown, -45, 45);
     }
 
 	void LateUpdate() {
-		float horizontal = Input.GetAxis("Mouse X") * rotateSpeed;
-		horizontal = Mathf.Clamp (horizontal, -5, 5);
-		transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, horizontal);
+        //float horizontal = Input.GetAxis("Mouse X") * rotateSpeed;
+        //transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, horizontal);
 
-		float vertical = Input.GetAxis("Mouse Y") * -rotateSpeed;
-		vertical = Mathf.Clamp (vertical, -5, 5);
-		transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, vertical);
+        //float vertical = Input.GetAxis("Mouse Y") * -rotateSpeed;
+        transform.localEulerAngles = new Vector3(-LookUpDown, LookLeftRight, 0);
 
         // Vertical, Horizontal
-		target.transform.Rotate(vertical, horizontal, 0);
-	}
+        //target.transform.Rotate(vertical, horizontal, 0);
+
+        //GameObject player = GameObject.FindGameObjectWithTag("Player");
+        //target.transform.forward = player.transform.forward + (LookLeftRight * player.transform.right) + (LookUpDown * player.transform.up);
+        //Mathf.Clamp(target.transform.localEulerAngles.x, -45, 45);
+        //Mathf.Clamp(target.transform.localEulerAngles.y, -45, 45);
+    }
 }

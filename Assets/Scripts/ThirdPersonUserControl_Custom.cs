@@ -29,7 +29,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             // get the transform of the main camera
             if (Camera.main != null)
             {
-                m_Cam = Camera.main.transform;
+                //m_Cam = Camera.main.transform;
             }
             else
             {
@@ -52,14 +52,21 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             }
         }
 
+		void StopStabbingEgg()
+		{
+			m_Animator.SetBool ("collidingWithEgg", false);
+		}
 
         // Fixed update is called in sync with physics
         private void FixedUpdate()
         {
             crouch_cd -= Time.deltaTime;
 
-            if (Input.GetKey(KeyCode.E) && collidingWithEgg)
-                m_Animator.Play("Stabbing Egg");
+			if (Input.GetKey (KeyCode.E) && collidingWithEgg) {
+				m_Animator.SetBool ("collidingWithEgg", true);
+				Invoke ("StopStabbingEgg", 3);
+			}
+			    
 
 
             // read inputs

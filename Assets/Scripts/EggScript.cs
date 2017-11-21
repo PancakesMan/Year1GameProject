@@ -15,13 +15,14 @@ public class EggScript : MonoBehaviour {
 		
 	}
 
-    void OnCollisionEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
-            other.GetComponent<ThirdPersonUserControl_Custom>().collidingWithEgg = true;
+		if (other.tag == "Player") {
+			other.GetComponent<ThirdPersonUserControl_Custom>().collidingWithEgg = true;
+		}
     }
 
-    void OnCollisionExit(Collider other)
+    void OnTriggerExit(Collider other)
     {
         if (other.tag == "Player")
             other.GetComponent<ThirdPersonUserControl_Custom>().collidingWithEgg = false;
