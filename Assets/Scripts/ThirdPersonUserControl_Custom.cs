@@ -29,7 +29,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             // get the transform of the main camera
             if (Camera.main != null)
             {
-                //m_Cam = Camera.main.transform;
+                m_Cam = Camera.main.transform;
             }
             else
             {
@@ -93,6 +93,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                 m_Move = v * Vector3.forward + h * Vector3.right;
             }
 
+          
 		    m_Character.Move(m_Move * (userHasControl ? 1 : 0), m_crouching, m_Jump && userHasControl);
             m_Jump = false;
         }
