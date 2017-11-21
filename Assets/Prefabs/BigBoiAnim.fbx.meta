@@ -1,0 +1,291 @@
+fileFormatVersion: 2
+guid: cbbd6a9b06e98e5428dd32ae3140bf70
+timeCreated: 1511235917
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: ankle_L_JNT
+    100002: ankle_R_JNT
+    100004: arm_L_IKH
+    100006: arm_L_IKH_CTRL
+    100008: arm_L_IKH_CTRL_GRP
+    100010: arm_R_IKH
+    100012: arm_R_IKH_CTRL
+    100014: arm_R_IKH_CTRL_GRP
+    100016: BigBoi_Jaw_Low
+    100018: BigBoi_Jaw_Low 1
+    100020: BigBoi_Low
+    100022: //RootNode
+    100024: clav_L_JNT
+    100026: clav_R_JNT
+    100028: elbow_L_JNT
+    100030: elbow_R_JNT
+    100032: finger_L_END
+    100034: finger_L_JNT
+    100036: finger_R_END
+    100038: finger_R_JNT
+    100040: foot_L_END
+    100042: foot_L_IKH
+    100044: foot_L_JNT
+    100046: foot_R_END
+    100048: foot_R_IKH
+    100050: foot_R_IKH_CTRL
+    100052: foot_R_IKH_CTRL 1
+    100054: foot_R_IKH_CTRL_GRP
+    100056: foot_R_IKH_CTRL_GRP1
+    100058: foot_R_JNT
+    100060: head_CTRL
+    100062: head_CTRL_GRP
+    100064: head_END
+    100066: heed_JNT
+    100068: hip_CTRL
+    100070: hip_CTRL_GRP
+    100072: hip_JNT
+    100074: jaw_B_CTRL
+    100076: jaw_B_CTRL_GRP
+    100078: jaw_B_END
+    100080: jaw_B_JNT
+    100082: jaw_S_CTRL
+    100084: jaw_S_CTRL_GRP
+    100086: jaw_S_END
+    100088: jaw_S_JNT
+    100090: Knee_L_CTRL
+    100092: Knee_L_CTRL1
+    100094: knee_L_JNT
+    100096: knee_R_JNT
+    100098: leg_L_IKH
+    100100: leg_L_JNT
+    100102: leg_R_IKH
+    100104: leg_R_JNT
+    100106: neck_CTRL
+    100108: neck_CTRL_GRP
+    100110: neck_JNT
+    100112: nee_L_GRP_LOC
+    100114: nee_L_LOC
+    100116: nee_R_GRP_LOC
+    100118: nee_R_LOC
+    100120: nurbsCircle1
+    100122: pPlane1
+    100124: root_CTRL
+    100126: root_CTRL_GRP
+    100128: root_JNT
+    100130: shoulder_L_CTRL
+    100132: shoulder_L_JNT
+    100134: shoulder_R_CTRL
+    100136: shoulder_R_CTRL_GRP
+    100138: shoulder_R_JNT
+    100140: sloulder_L_CTRL_GRP
+    100142: spine_2_CTRL
+    100144: spine_2_CTRL_GRP
+    100146: spine_2_JNT
+    100148: spine_3_CTRL
+    100150: spine_3_CTRL_GRP
+    100152: spine_3_JNT
+    100154: spine_CTRL
+    100156: spine_CTRL_GRP
+    100158: spine_JNT
+    100160: tent_L_2_JNT
+    100162: tent_L_3_JNT
+    100164: tent_L_END
+    100166: tent_L_IKH
+    100168: tent_L_IKH_CTRL
+    100170: tent_L_IKH_CTRL_GRP
+    100172: tent_L_JNT
+    100174: tent_R_2_JNT
+    100176: tent_R_3_JNT
+    100178: tent_R_END
+    100180: tent_R_IKH
+    100182: tent_R_IKH_CTRL
+    100184: tent_R_IKH_CTRL_GRP
+    100186: tent_R_JNT
+    100188: toe_R_IKH_CTRL
+    100190: toe_R_IKH_CTRL 1
+    100192: toe_R_IKH_CTRL_GRP
+    100194: toe_R_IKH_CTRL_IKH
+    100196: transform1
+    100198: transform2
+    100200: wrist_L_JNT
+    100202: wrist_R_JNT
+    400000: ankle_L_JNT
+    400002: ankle_R_JNT
+    400004: arm_L_IKH
+    400006: arm_L_IKH_CTRL
+    400008: arm_L_IKH_CTRL_GRP
+    400010: arm_R_IKH
+    400012: arm_R_IKH_CTRL
+    400014: arm_R_IKH_CTRL_GRP
+    400016: BigBoi_Jaw_Low
+    400018: BigBoi_Jaw_Low 1
+    400020: BigBoi_Low
+    400022: //RootNode
+    400024: clav_L_JNT
+    400026: clav_R_JNT
+    400028: elbow_L_JNT
+    400030: elbow_R_JNT
+    400032: finger_L_END
+    400034: finger_L_JNT
+    400036: finger_R_END
+    400038: finger_R_JNT
+    400040: foot_L_END
+    400042: foot_L_IKH
+    400044: foot_L_JNT
+    400046: foot_R_END
+    400048: foot_R_IKH
+    400050: foot_R_IKH_CTRL
+    400052: foot_R_IKH_CTRL 1
+    400054: foot_R_IKH_CTRL_GRP
+    400056: foot_R_IKH_CTRL_GRP1
+    400058: foot_R_JNT
+    400060: head_CTRL
+    400062: head_CTRL_GRP
+    400064: head_END
+    400066: heed_JNT
+    400068: hip_CTRL
+    400070: hip_CTRL_GRP
+    400072: hip_JNT
+    400074: jaw_B_CTRL
+    400076: jaw_B_CTRL_GRP
+    400078: jaw_B_END
+    400080: jaw_B_JNT
+    400082: jaw_S_CTRL
+    400084: jaw_S_CTRL_GRP
+    400086: jaw_S_END
+    400088: jaw_S_JNT
+    400090: Knee_L_CTRL
+    400092: Knee_L_CTRL1
+    400094: knee_L_JNT
+    400096: knee_R_JNT
+    400098: leg_L_IKH
+    400100: leg_L_JNT
+    400102: leg_R_IKH
+    400104: leg_R_JNT
+    400106: neck_CTRL
+    400108: neck_CTRL_GRP
+    400110: neck_JNT
+    400112: nee_L_GRP_LOC
+    400114: nee_L_LOC
+    400116: nee_R_GRP_LOC
+    400118: nee_R_LOC
+    400120: nurbsCircle1
+    400122: pPlane1
+    400124: root_CTRL
+    400126: root_CTRL_GRP
+    400128: root_JNT
+    400130: shoulder_L_CTRL
+    400132: shoulder_L_JNT
+    400134: shoulder_R_CTRL
+    400136: shoulder_R_CTRL_GRP
+    400138: shoulder_R_JNT
+    400140: sloulder_L_CTRL_GRP
+    400142: spine_2_CTRL
+    400144: spine_2_CTRL_GRP
+    400146: spine_2_JNT
+    400148: spine_3_CTRL
+    400150: spine_3_CTRL_GRP
+    400152: spine_3_JNT
+    400154: spine_CTRL
+    400156: spine_CTRL_GRP
+    400158: spine_JNT
+    400160: tent_L_2_JNT
+    400162: tent_L_3_JNT
+    400164: tent_L_END
+    400166: tent_L_IKH
+    400168: tent_L_IKH_CTRL
+    400170: tent_L_IKH_CTRL_GRP
+    400172: tent_L_JNT
+    400174: tent_R_2_JNT
+    400176: tent_R_3_JNT
+    400178: tent_R_END
+    400180: tent_R_IKH
+    400182: tent_R_IKH_CTRL
+    400184: tent_R_IKH_CTRL_GRP
+    400186: tent_R_JNT
+    400188: toe_R_IKH_CTRL
+    400190: toe_R_IKH_CTRL 1
+    400192: toe_R_IKH_CTRL_GRP
+    400194: toe_R_IKH_CTRL_IKH
+    400196: transform1
+    400198: transform2
+    400200: wrist_L_JNT
+    400202: wrist_R_JNT
+    2300000: pPlane1
+    3300000: pPlane1
+    4300000: pPlane1
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

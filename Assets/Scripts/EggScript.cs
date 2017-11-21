@@ -17,8 +17,9 @@ public class EggScript : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
-            other.GetComponent<ThirdPersonUserControl_Custom>().collidingWithEgg = true;
+		if (other.tag == "Player") {
+			other.GetComponent<ThirdPersonUserControl_Custom>().collidingWithEgg = true;
+		}
     }
 
     void OnTriggerExit(Collider other)
