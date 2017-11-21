@@ -661,6 +661,7 @@ GameObject:
   - component: {fileID: 124550093535269328}
   - component: {fileID: 81935113033879876}
   - component: {fileID: 114736690679529380}
+  - component: {fileID: 114651106165427434}
   m_Layer: 0
   m_Name: MainCamera
   m_TagString: MainCamera
@@ -1365,6 +1366,7 @@ GameObject:
   - component: {fileID: 81006474744075112}
   - component: {fileID: 114236718847255590}
   - component: {fileID: 114106130065982564}
+  - component: {fileID: 114545193355245424}
   m_Layer: 0
   m_Name: FPS Camera
   m_TagString: 1stPerson
@@ -3031,6 +3033,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1968221893368396}
   rotateSpeed: 0.25
+  LookLeftRight: 0
+  LookUpDown: 0
 --- !u!114 &114286783297961668
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3064,6 +3068,28 @@ MonoBehaviour:
   userHasControl: 1
   followingLad: {fileID: 0}
   collidingWithEgg: 0
+--- !u!114 &114545193355245424
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1968221893368396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abc9d7002f686ad46b772223cba97e88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114651106165427434
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1462056859669332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abc9d7002f686ad46b772223cba97e88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114736690679529380
 MonoBehaviour:
   m_ObjectHideFlags: 1
