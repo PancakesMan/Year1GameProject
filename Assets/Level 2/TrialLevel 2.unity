@@ -1481,6 +1481,11 @@ Prefab:
       propertyPath: m_Name
       value: DocThirdToFirstPersonPrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 114236718847255590, guid: c1ffca6fc2784354dbf7253a16633dfd,
+        type: 2}
+      propertyPath: rotateSpeed
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c1ffca6fc2784354dbf7253a16633dfd, type: 2}
   m_IsPrefabParent: 0
