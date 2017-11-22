@@ -6,22 +6,14 @@ using UnityEngine.AI;
 public class shooting : MonoBehaviour {
 
 	public Camera mainCam;
-	public GameObject camera1;
-	public GameObject camera2;
 
 	public Animator tree;
-	public GameObject crosshair; 
-
-	public bool zoomed = false;
-	public bool arrowCoated = false; 
-
 
     public GameObject collisionToggle;
 
-	public GameObject moonWhite;
-	public GameObject moonGreen; 
+	
 
-	void Update ()
+    void Update ()
 	{
 		if (Input.GetMouseButtonDown (0)) {
 			RaycastHit hit;
@@ -35,46 +27,18 @@ public class shooting : MonoBehaviour {
 					Invoke ("TreeFalling", 3); 
 
 				}
-				if (hit.collider.tag == "WoodBlockade" && arrowCoated == true) {
+				if (hit.collider.tag == "WoodBlockade") {
 					hit.collider.gameObject.SetActive(false);
 				}
 
-				arrowCoated = false;
 			}
 					
 		}
+      
+	
 
-		if (Input.GetMouseButtonDown (1) && zoomed == false) {
-			mainCam.transform.position = camera2.transform.position; 
-			crosshair.SetActive (true);
-			zoomed = true;
-
-		} else if (Input.GetMouseButtonDown (1) && zoomed == true) {
-			mainCam.transform.position = camera1.transform.position; 
-			crosshair.SetActive (false);
-			zoomed = false;
-
-
-		}
-
-		if (arrowCoated == true) {
-			moonGreen.SetActive (true);
-			moonWhite.SetActive (false);
-		} else if (arrowCoated == false) {
-			moonWhite.SetActive (true); 
-			moonGreen.SetActive (false); 
-		}
 	}
 
-	void OnTriggerStay (Collider other) {
-		if (other.tag == "Egg") {
-			if (Input.GetKeyDown (KeyCode.E))
-			{
-				Debug.Log ("Arrow Coated!"); 
-				arrowCoated = true;
-		}
-	  }
-	}
 		
 	void TreeFalling()
 	{

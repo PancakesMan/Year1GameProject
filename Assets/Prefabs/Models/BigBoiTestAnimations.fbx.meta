@@ -1,0 +1,435 @@
+fileFormatVersion: 2
+guid: 3604ebea58509224d9d767b966db1ef0
+timeCreated: 1511242158
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: ankle_L_JNT
+    100002: ankle_R_JNT
+    100004: BigBoi_Jaw_Duplicate
+    100006: //RootNode
+    100008: clav_L_JNT
+    100010: clav_R_JNT
+    100012: elbow_L_JNT
+    100014: elbow_R_JNT
+    100016: finger_L_END
+    100018: finger_L_JNT
+    100020: finger_R_END
+    100022: finger_R_JNT
+    100024: foot_L_END
+    100026: foot_L_JNT
+    100028: foot_R_END
+    100030: foot_R_JNT
+    100032: head_END
+    100034: heed_JNT
+    100036: hip_JNT
+    100038: jaw_B_END
+    100040: jaw_B_JNT
+    100042: jaw_S_END
+    100044: jaw_S_JNT
+    100046: knee_L_JNT
+    100048: knee_R_JNT
+    100050: leg_L_JNT
+    100052: leg_R_JNT
+    100054: neck_JNT
+    100056: root_JNT
+    100058: shoulder_L_JNT
+    100060: shoulder_R_JNT
+    100062: spine_2_JNT
+    100064: spine_3_JNT
+    100066: spine_JNT
+    100068: tent_L_2_JNT
+    100070: tent_L_3_JNT
+    100072: tent_L_END
+    100074: tent_L_JNT
+    100076: tent_R_2_JNT
+    100078: tent_R_3_JNT
+    100080: tent_R_END
+    100082: tent_R_JNT
+    100084: wrist_L_JNT
+    100086: wrist_R_JNT
+    400000: ankle_L_JNT
+    400002: ankle_R_JNT
+    400004: BigBoi_Jaw_Duplicate
+    400006: //RootNode
+    400008: clav_L_JNT
+    400010: clav_R_JNT
+    400012: elbow_L_JNT
+    400014: elbow_R_JNT
+    400016: finger_L_END
+    400018: finger_L_JNT
+    400020: finger_R_END
+    400022: finger_R_JNT
+    400024: foot_L_END
+    400026: foot_L_JNT
+    400028: foot_R_END
+    400030: foot_R_JNT
+    400032: head_END
+    400034: heed_JNT
+    400036: hip_JNT
+    400038: jaw_B_END
+    400040: jaw_B_JNT
+    400042: jaw_S_END
+    400044: jaw_S_JNT
+    400046: knee_L_JNT
+    400048: knee_R_JNT
+    400050: leg_L_JNT
+    400052: leg_R_JNT
+    400054: neck_JNT
+    400056: root_JNT
+    400058: shoulder_L_JNT
+    400060: shoulder_R_JNT
+    400062: spine_2_JNT
+    400064: spine_3_JNT
+    400066: spine_JNT
+    400068: tent_L_2_JNT
+    400070: tent_L_3_JNT
+    400072: tent_L_END
+    400074: tent_L_JNT
+    400076: tent_R_2_JNT
+    400078: tent_R_3_JNT
+    400080: tent_R_END
+    400082: tent_R_JNT
+    400084: wrist_L_JNT
+    400086: wrist_R_JNT
+    4300000: BigBoi_Jaw_Duplicate
+    7400000: Take 001
+    7400002: BigBoi.Walking
+    7400004: BigBoi.Running
+    7400006: BigBoi.LookingAround
+    7400008: BigBoi.PickingUp
+    7400010: BigBoi.Chewing
+    7400012: BigBoi.DroppingLad
+    7400014: BigBoi.WholeEatingAnimation
+    7400016: BigBoi.Idle
+    7400018: BigBoi.AttackPlayer
+    9500000: //RootNode
+    13700000: BigBoi_Jaw_Duplicate
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: BigBoi.Walking
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: BigBoi.Running
+      takeName: Take 001
+      firstFrame: 71
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: BigBoi.LookingAround
+      takeName: Take 001
+      firstFrame: 111
+      lastFrame: 250
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: BigBoi.PickingUp
+      takeName: Take 001
+      firstFrame: 261
+      lastFrame: 283
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: BigBoi.Chewing
+      takeName: Take 001
+      firstFrame: 284
+      lastFrame: 315
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: BigBoi.DroppingLad
+      takeName: Take 001
+      firstFrame: 316
+      lastFrame: 337
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: BigBoi.WholeEatingAnimation
+      takeName: Take 001
+      firstFrame: 261
+      lastFrame: 337
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: BigBoi.Idle
+      takeName: Take 001
+      firstFrame: 345
+      lastFrame: 369
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: BigBoi.AttackPlayer
+      takeName: Take 001
+      firstFrame: 381
+      lastFrame: 465
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 100
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
