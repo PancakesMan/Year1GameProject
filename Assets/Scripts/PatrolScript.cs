@@ -16,6 +16,7 @@ public class PatrolScript : MonoBehaviour
     private bool playerInSight = false;
 
     private NavMeshAgent agent;
+    private Animator animator;
     private GameObject player;
 
     // Use this for initialization
@@ -23,6 +24,7 @@ public class PatrolScript : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
         player = GameObject.FindGameObjectWithTag("Player");
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -30,15 +32,18 @@ public class PatrolScript : MonoBehaviour
     {
         if (Vector3.Distance(agent.transform.position, waypoints[waypointTarget].transform.position) < 1.0f)
         {
+            animator.Play("Idle");
             timeWaited += Time.deltaTime;
             if (timeWaited >= waitTimeBetweenWaypoints)
             {
+                animator.Play("Walking");
                 timeWaited = 0.0f;
                 waypointTarget += 1;
                 waypointTarget %= waypoints.Count;
             }
         }
-        NavigateTo();
+        else
+            NavigateTo();
     }
 
     void NavigateTo()
@@ -54,8 +59,14 @@ public class PatrolScript : MonoBehaviour
         }
 
         if (playerInSight)
+        {
             agent.SetDestination(player.transform.position);
+            animator.Play("Running");
+        }
         else
+        {
             agent.SetDestination(waypoints[waypointTarget].transform.position);
+            animator.Play("Walking");
+        }
     }
 }
