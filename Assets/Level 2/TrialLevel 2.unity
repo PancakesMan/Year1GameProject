@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0056256466, g: 0.005595357, b: 0.0056256466, a: 1}
+  m_IndirectSpecularColor: {r: 0.0056247804, g: 0.0055973534, b: 0.0056247804, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -1480,6 +1480,11 @@ Prefab:
     - target: {fileID: 1028648848878390, guid: c1ffca6fc2784354dbf7253a16633dfd, type: 2}
       propertyPath: m_Name
       value: DocThirdToFirstPersonPrefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 114236718847255590, guid: c1ffca6fc2784354dbf7253a16633dfd,
+        type: 2}
+      propertyPath: rotateSpeed
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c1ffca6fc2784354dbf7253a16633dfd, type: 2}
@@ -3569,7 +3574,8 @@ Prefab:
       propertyPath: deathMenu
       value: 
       objectReference: {fileID: 1540988302}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114109055180288626, guid: 7cba6d7c02c099744aba159fa6fe46b9, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 7cba6d7c02c099744aba159fa6fe46b9, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1751764956
