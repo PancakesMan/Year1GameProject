@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityStandardAssets.CrossPlatformInput;
 
 namespace UnityStandardAssets.Characters.ThirdPerson
@@ -11,15 +12,18 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         private Animator m_Animator;              // A reference to the Animator for the ThirdPersonCharacter
         private Transform m_Cam;                  // A reference to the main camera in the scenes transform
         private Vector3 m_CamForward;             // The current forward direction of the camera
-        private Vector3 m_Move;                   // the world-relative desired move direction, calculated from the camForward and user input.
+        private Vector3 m_Move;                   // The world-relative desired move direction, calculated from the camForward and user input.
+        private shooting ShootingScript;          // A reference to the player's ShootingScript
+
         private bool m_Jump;                      
 		private bool m_crouching = false;
-        public bool userHasControl = true;
+        private float crouch_cd = 0.25f;          // Cooldown for crouching toggle
 
-        float crouch_cd = 0.25f;
-
+        public bool userHasControl = true;        // Used to disable player controls
         [HideInInspector]
-        public GameObject followingLad;
+        public NavMeshAgent followingLad;
+        [HideInInspector]
+        public EggScript egg;
         [HideInInspector]
         public bool collidingWithEgg;
 
@@ -28,33 +32,39 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         {
             // get the transform of the main camera
             if (Camera.main != null)
-            {
                 m_Cam = Camera.main.transform;
-            }
             else
             {
+                // We use self-relative controls in this case
+                // Which probably isn't what the user wants
+                // But hey, we warned them!
                 Debug.LogWarning(
-                    "Warning: no main camera found. Third person character needs a Camera tagged \"MainCamera\", for camera-relative controls.", gameObject);
-                // we use self-relative controls in this case, which probably isn't what the user wants, but hey, we warned them!
+                    "Warning: no main camera found." +
+                    "Third person character needs a Camera tagged \"MainCamera\", " +
+                    "for camera-relative controls.", gameObject);
             }
-
-            // get the third person character ( this should never be null due to require component )
+            // Get the third person character ( this should never be null due to require component )
             m_Character = GetComponent<ThirdPersonCharacter>();
+
+            // Get the player's Animator
             m_Animator = GetComponent<Animator>();
+
+            // Get the player's Shooting Script
+            // which is attached to a sibling's child
+            ShootingScript = transform.parent.GetComponentInChildren<shooting>(true);
         }
 
 
         private void Update()
         {
             if (!m_Jump)
-            {
                 m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
-            }
         }
 
 		void StopStabbingEgg()
 		{
-			m_Animator.SetBool ("collidingWithEgg", false);
+            // Stop egg stabbing animation
+			m_Animator.SetBool("collidingWithEgg", false);
 		}
 
         // Fixed update is called in sync with physics
@@ -62,25 +72,43 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         {
             crouch_cd -= Time.deltaTime;
 
-			if (Input.GetKey (KeyCode.E) && collidingWithEgg) {
+			if (Input.GetKey(KeyCode.E) && collidingWithEgg)
+            {
+                if (egg != null)
+                {
+                    if (egg.LadHatched == false)
+                    {
+                        egg.LadHatched = true;
+                        egg.HatchLad(3.0f);
+
+                        followingLad = egg.Lad;
+                    }
+                }
+                // Play egg stabbing animation
 				m_Animator.SetBool ("collidingWithEgg", true);
-				Invoke ("StopStabbingEgg", 3);
+
+                // Make egg stabbig animation stop playing
+				Invoke("StopStabbingEgg", 3);
+
+                // The arrow is now coated
+                ShootingScript.coated = true;
 			}
 			    
 
 
-            // read inputs
+            // Read User Inputs
             float h = CrossPlatformInputManager.GetAxis("Horizontal");
             float v = CrossPlatformInputManager.GetAxis("Vertical");
 
-			if (Input.GetKey (KeyCode.LeftControl) && crouch_cd < 0.0f) {
+			if (Input.GetKey (KeyCode.LeftControl) && crouch_cd < 0.0f)
+            {
 				m_crouching = !m_crouching;
                 crouch_cd = 0.25f;
 			}
 
             if (Input.GetKey(KeyCode.LeftShift)) m_Move *= 0.5f;
 
-            // calculate move direction to pass to character
+            // Calculate move direction to pass to character
             if (m_Cam != null)
             {
                 // calculate camera relative direction to move:
@@ -93,7 +121,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                 m_Move = v * Vector3.forward + h * Vector3.right;
             }
 
-          
+            
 		    m_Character.Move(m_Move * (userHasControl ? 1 : 0), m_crouching, m_Jump && userHasControl);
             m_Jump = false;
         }

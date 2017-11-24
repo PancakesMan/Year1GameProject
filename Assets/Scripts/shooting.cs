@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityStandardAssets.Characters.ThirdPerson;
 
 public class shooting : MonoBehaviour {
 
@@ -9,11 +10,16 @@ public class shooting : MonoBehaviour {
 	public Animator tree;
     public GameObject collisionToggle;
 
+    [HideInInspector]
+    public bool coated;
+
     private Animator xbowAnimator;
+    private ThirdPersonUserControl_Custom player;
 
     void Start()
     {
         xbowAnimator = GetComponent<Animator>();
+        player = GameObject.Find("ThirdPersonController").GetComponent<ThirdPersonUserControl_Custom>();
     }
 
     void Update ()
@@ -23,20 +29,21 @@ public class shooting : MonoBehaviour {
 			RaycastHit hit;
 			Ray ray = mainCam.ScreenPointToRay (Input.mousePosition); 
 			if (Physics.Raycast (ray, out hit)) {
-
-			
 				if (hit.collider.tag == "Boulder") {
 					Debug.Log ("You shot the boulder!");
 					hit.rigidbody.useGravity = true;
 					Invoke ("TreeFalling", 3); 
-
 				}
-				if (hit.collider.tag == "WoodBlockade") {
-					hit.collider.gameObject.SetActive(false);
+				else if (hit.collider.tag == "WoodBlockade" && coated) {
+                    player.followingLad.SetDestination(hit.collider.transform.position);
+					//hit.collider.gameObject.SetActive(false);
 				}
 
 			}
-					
+
+            // Set coated to false
+            //coating must be re-applied after every shot
+            coated = false;		
 		}
       
 	
