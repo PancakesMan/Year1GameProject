@@ -29,13 +29,13 @@ public class EggScript : MonoBehaviour {
     {
         if (arrowCoated == true)
         {
-            moonGreen.SetActive(true);
-            moonWhite.SetActive(false);
+            //moonGreen.SetActive(true);
+            //moonWhite.SetActive(false);
         }
         else if (arrowCoated == false)
         {
-            moonWhite.SetActive(true);
-            moonGreen.SetActive(false);
+            //moonWhite.SetActive(true);
+            //moonGreen.SetActive(false);
         }
     }
 

@@ -8,7 +8,8 @@ public class shooting : MonoBehaviour {
 
 	public Camera mainCam;
 	public Animator tree;
-    public GameObject collisionToggle;
+    public GameObject collisionToggle;//, ThirdPersonObject;
+    public GameObject ThirdPersonObject;
 
     [HideInInspector]
     public bool coated;
@@ -19,7 +20,7 @@ public class shooting : MonoBehaviour {
     void Start()
     {
         xbowAnimator = GetComponent<Animator>();
-        player = GameObject.Find("ThirdPersonController").GetComponent<ThirdPersonUserControl_Custom>();
+        player = ThirdPersonObject.GetComponent<ThirdPersonUserControl_Custom>();
     }
 
     void Update ()
