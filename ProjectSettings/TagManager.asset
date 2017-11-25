@@ -9,6 +9,8 @@ TagManager:
   - WoodBlockade
   - Fire
   - Collision Toggle
+  - 1stPerson
+  - Lad
   layers:
   - Default
   - TransparentFX
