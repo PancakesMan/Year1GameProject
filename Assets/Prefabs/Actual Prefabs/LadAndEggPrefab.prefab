@@ -293,6 +293,7 @@ GameObject:
   - component: {fileID: 4900095897494618}
   - component: {fileID: 95938831044451280}
   - component: {fileID: 195266385527558812}
+  - component: {fileID: 65217278572766836}
   m_Layer: 0
   m_Name: LadAnimation
   m_TagString: Lad
@@ -356,6 +357,7 @@ GameObject:
   - component: {fileID: 95494946269676886}
   - component: {fileID: 65323344727604198}
   - component: {fileID: 114726975883895014}
+  - component: {fileID: 65468749129773842}
   m_Layer: 0
   m_Name: EggAnim
   m_TagString: Egg
@@ -2319,6 +2321,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1180370188604716}
   m_Mesh: {fileID: 4300000, guid: 047c31b66bcf0ec4eb07e07a17337be1, type: 3}
+--- !u!65 &65217278572766836
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1302741103190482}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0.53, z: 0.3}
 --- !u!65 &65323344727604198
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -2331,6 +2345,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.41, z: 1}
   m_Center: {x: 0, y: 0.81, z: 1.48}
+--- !u!65 &65468749129773842
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1329321311741202}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 1, z: 1}
+  m_Center: {x: 0, y: 0.73, z: 1.46}
 --- !u!95 &95494946269676886
 Animator:
   serializedVersion: 3
