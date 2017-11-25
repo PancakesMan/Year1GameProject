@@ -1,7 +1,7 @@
 fileFormatVersion: 2
-guid: c43c355c0b6484d4da790b3e34d0545e
-timeCreated: 1510529063
-licenseType: Pro
+guid: aa79a55b199613f479630339c2d6c8c2
+timeCreated: 1511588754
+licenseType: Free
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
@@ -156,12 +156,11 @@ ModelImporter:
     400146: wrist_R_END
     400148: wrist_R_JNT
     4300000: Lad_Low
-    7400000: Take 001
-    7400002: Lad.Chomping
-    7400004: Lad.Walking
-    7400006: Lad.Birthing
-    7400008: Lad.Idle
-    7400010: Lad.IdleInEgg
+    7400000: Lad.Chomping
+    7400002: Lad.Walking
+    7400004: Lad.Birthing
+    7400006: Lad.Idle
+    7400008: Lad.IdleInEgg
     9500000: //RootNode
     13700000: Lad_Low
   materials:
@@ -170,7 +169,7 @@ ModelImporter:
     materialSearch: 1
   animations:
     legacyGenerateAnimations: 4
-    bakeSimulation: 1
+    bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
@@ -294,26 +293,7 @@ ModelImporter:
       heightFromFeet: 0
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves:
-      - name: Curve
-        curve:
-          serializedVersion: 2
-          curve:
-          - serializedVersion: 2
-            time: 0
-            value: 0.014373779
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
-          - serializedVersion: 2
-            time: 1
-            value: 0.038124084
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
-          preInfinity: 3
-          postInfinity: 3
-          rotationOrder: 0
+      curves: []
       events: []
       transformMask: []
       maskType: 3
@@ -330,7 +310,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -350,7 +330,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.2
+    globalScale: 25
     meshCompression: 0
     addColliders: 0
     importVisibility: 1

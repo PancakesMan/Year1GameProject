@@ -82,7 +82,7 @@ AnimatorState:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Lad Idle
-  m_Speed: 0.5
+  m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -93,7 +93,7 @@ AnimatorState:
   m_SpeedParameterActive: 0
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
-  m_Motion: {fileID: 7400008, guid: c43c355c0b6484d4da790b3e34d0545e, type: 3}
+  m_Motion: {fileID: 7400006, guid: aa79a55b199613f479630339c2d6c8c2, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -105,7 +105,7 @@ AnimatorState:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Lad Hatching
-  m_Speed: 0.25
+  m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101288552230185710}
@@ -117,7 +117,7 @@ AnimatorState:
   m_SpeedParameterActive: 0
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
-  m_Motion: {fileID: 7400006, guid: c43c355c0b6484d4da790b3e34d0545e, type: 3}
+  m_Motion: {fileID: 7400004, guid: aa79a55b199613f479630339c2d6c8c2, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -140,7 +140,7 @@ AnimatorState:
   m_SpeedParameterActive: 0
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
-  m_Motion: {fileID: 7400004, guid: c43c355c0b6484d4da790b3e34d0545e, type: 3}
+  m_Motion: {fileID: 7400002, guid: aa79a55b199613f479630339c2d6c8c2, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -164,7 +164,7 @@ AnimatorState:
   m_SpeedParameterActive: 0
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
-  m_Motion: {fileID: 7400010, guid: c43c355c0b6484d4da790b3e34d0545e, type: 3}
+  m_Motion: {fileID: 7400008, guid: aa79a55b199613f479630339c2d6c8c2, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
