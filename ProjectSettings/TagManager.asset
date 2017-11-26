@@ -11,6 +11,8 @@ TagManager:
   - Collision Toggle
   - 1stPerson
   - Lad
+  - DeathMenu
+  - Crossbow
   layers:
   - Default
   - TransparentFX
