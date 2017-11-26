@@ -2160,7 +2160,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1302741103190482}
   m_LocalRotation: {x: -0, y: 0.99718976, z: -0, w: 0.07491825}
-  m_LocalPosition: {x: -1.1727524, y: -1.174, z: 0.76241684}
+  m_LocalPosition: {x: -1.277, y: -1.174, z: 0.837}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4787457638185064}
@@ -2420,7 +2420,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nearBlockade: 0
-  nearestBlockade: {fileID: 0}
+  eatenBlockade: 0
 --- !u!114 &114726975883895014
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2516,7 +2516,7 @@ NavMeshAgent:
   m_Speed: 1
   m_Acceleration: 8
   avoidancePriority: 50
-  m_AngularSpeed: 0
+  m_AngularSpeed: 120
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1

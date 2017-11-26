@@ -335,15 +335,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4985510194477806, guid: 1a752cd2fe6f13e44af0c50c43a4c267, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 42.14
+      value: 56.41
       objectReference: {fileID: 0}
     - target: {fileID: 4985510194477806, guid: 1a752cd2fe6f13e44af0c50c43a4c267, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 47.83
+      value: 42.021
       objectReference: {fileID: 0}
     - target: {fileID: 4985510194477806, guid: 1a752cd2fe6f13e44af0c50c43a4c267, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 93.65
+      value: 17.156
       objectReference: {fileID: 0}
     - target: {fileID: 4985510194477806, guid: 1a752cd2fe6f13e44af0c50c43a4c267, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1210,7 +1210,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1667794562944112, guid: 18e0241eda10c4544aec087be67d90fe, type: 2}
       propertyPath: m_Name
-      value: BigBoiTestAnimations (1)
+      value: BigBoLadEater
       objectReference: {fileID: 0}
     - target: {fileID: 4886437931360378, guid: 18e0241eda10c4544aec087be67d90fe, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
