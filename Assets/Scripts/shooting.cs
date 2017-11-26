@@ -8,7 +8,8 @@ public class shooting : MonoBehaviour {
 
 	public Camera mainCam;
 	public Animator tree;
-    public GameObject collisionToggle;
+    public GameObject collisionToggle;//, ThirdPersonObject;
+    public GameObject ThirdPersonObject;
 
     [HideInInspector]
     public bool coated;
@@ -19,7 +20,7 @@ public class shooting : MonoBehaviour {
     void Start()
     {
         xbowAnimator = GetComponent<Animator>();
-        player = GameObject.Find("ThirdPersonController").GetComponent<ThirdPersonUserControl_Custom>();
+        player = ThirdPersonObject.GetComponent<ThirdPersonUserControl_Custom>();
     }
 
     void Update ()
@@ -29,6 +30,7 @@ public class shooting : MonoBehaviour {
 			RaycastHit hit;
 			Ray ray = mainCam.ScreenPointToRay (Input.mousePosition); 
 			if (Physics.Raycast (ray, out hit)) {
+                Debug.Log(hit.collider.tag + " was hit");
 				if (hit.collider.tag == "Boulder") {
 					Debug.Log ("You shot the boulder!");
 					hit.rigidbody.useGravity = true;
@@ -43,7 +45,7 @@ public class shooting : MonoBehaviour {
 
             // Set coated to false
             //coating must be re-applied after every shot
-            coated = false;		
+            coated = false;
 		}
       
 	
