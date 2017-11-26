@@ -64,6 +64,7 @@ public class DialogueTrigger : MonoBehaviour {
             {
                 textBackground.SetActive(false);
                 charUserControl.userHasControl = true;
+                gameObject.SetActive(false);
                 currentlyActive = false;
             }
         }
