@@ -9,8 +9,8 @@ public class LadScript : MonoBehaviour {
     private Vector3 position;
 
     public bool nearBlockade = false;
-    [HideInInspector]
-    public GameObject nearestBlockade;
+    public bool eatenBlockade = false;
+    private GameObject nearestBlockade;
 
 	// Use this for initialization
 	void Start()
@@ -36,6 +36,7 @@ public class LadScript : MonoBehaviour {
         yield return new WaitForSecondsRealtime(2);
         nearestBlockade.SetActive(false);
         nearestBlockade = null;
+        eatenBlockade = true;
         nearBlockade = false;
     }
 
@@ -43,7 +44,6 @@ public class LadScript : MonoBehaviour {
     {
         yield return new WaitForSecondsRealtime(2);
         agent.SetDestination(position);
-        agent.updateRotation = true;
         animator.Play("Walking");
     }
 
@@ -54,7 +54,7 @@ public class LadScript : MonoBehaviour {
             nearBlockade = true;
             nearestBlockade = other.gameObject;
         }
-        else if (other.gameObject.tag == "Egg")
+        else if (other.gameObject.tag == "Egg" && eatenBlockade)
             gameObject.SetActive(false);
     }
 }
