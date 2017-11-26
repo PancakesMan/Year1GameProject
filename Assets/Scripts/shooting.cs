@@ -38,6 +38,7 @@ public class shooting : MonoBehaviour {
 				}
 				else if (hit.collider.tag == "WoodBlockade" && coated) {
                     player.followingLad.SetDestination(hit.collider.transform.position);
+                    player.followingLad.transform.GetComponent<Animator>().Play("Walking");
 					//hit.collider.gameObject.SetActive(false);
 				}
 
