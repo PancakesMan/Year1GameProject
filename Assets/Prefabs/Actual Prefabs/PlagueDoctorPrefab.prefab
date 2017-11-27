@@ -4858,8 +4858,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1771244104804328}
+<<<<<<< HEAD
   m_LocalRotation: {x: 0.010234342, y: 0.99891657, z: 0.045081373, w: -0.0053533837}
   m_LocalPosition: {x: 101.3, y: 9.47, z: 37.17}
+=======
+  m_LocalRotation: {x: -0.056542188, y: 0.5564652, z: -0.002794173, w: -0.82894015}
+  m_LocalPosition: {x: 61.13, y: 42.35, z: 17.04}
+>>>>>>> 3a5de83a02f877805db08c4e453b8244af59cbb2
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4153413146155646}
@@ -5046,7 +5051,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1308751669425610}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!81 &81977827684928224
 AudioListener:
   m_ObjectHideFlags: 1
@@ -5371,7 +5376,7 @@ MonoBehaviour:
   mainCam: {fileID: 20583203296245566}
   tree: {fileID: 0}
   collisionToggle: {fileID: 0}
-  ThirdPersonObject: {fileID: 0}
+  ThirdPersonObject: {fileID: 1982168021917864}
   coated: 0
 --- !u!114 &114955574038239270
 MonoBehaviour:
