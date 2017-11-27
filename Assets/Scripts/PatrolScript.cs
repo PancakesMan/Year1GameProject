@@ -13,7 +13,7 @@ public class PatrolScript : MonoBehaviour
 
     private float timeWaited = 0.0f;
     private int waypointTarget = 0;
-    private bool playerInSight = false;
+    private bool playerInSight = false, ladInSight = false;
 
     private NavMeshAgent agent;
     private Animator animator;
@@ -56,6 +56,22 @@ public class PatrolScript : MonoBehaviour
             RaycastHit hit;
             if (Physics.Raycast(transform.position, targetDirection.normalized, out hit, viewingDistance))
                 playerInSight = (hit.collider.gameObject.tag == "Player");
+        }
+        else
+        {
+            GameObject lad = GameObject.FindGameObjectWithTag("Lad");
+            if (lad != null)
+            {
+                Vector3 ladDirection = lad.transform.position - transform.position;
+                float angleToLad = Vector3.Angle(ladDirection, transform.forward);
+
+                if (angleToLad < viewingAngle * 0.5f)
+                {
+                    RaycastHit hit;
+                    if (Physics.Raycast(transform.position, targetDirection.normalized, out hit, viewingDistance))
+                        ladInSight = (hit.collider.gameObject.tag == "Lad");
+                }
+            }
         }
 
         if (playerInSight)
