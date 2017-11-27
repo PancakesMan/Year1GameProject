@@ -8,7 +8,7 @@ public class LadScript : MonoBehaviour {
     private Animator animator;
     private Vector3 position;
 
-    public bool nearBlockade = false;
+    public bool nearBlockade = false, specialBlockade = false;
     public bool eatenBlockade = false;
     private GameObject nearestBlockade;
 
@@ -57,6 +57,7 @@ public class LadScript : MonoBehaviour {
         else if (other.gameObject.tag == "SpecialWoodBlockade")
         {
             GetComponent<Rigidbody>().isKinematic = true;
+            specialBlockade = true;
             agent.isStopped = true;
             animator.Play("Lad Eating");
         }
