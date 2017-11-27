@@ -672,24 +672,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &234817991 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1771244104804328, guid: 1a752cd2fe6f13e44af0c50c43a4c267,
-    type: 2}
-  m_PrefabInternal: {fileID: 837784440}
---- !u!114 &234817994
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 234817991}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06b4f10bc482e5b4485bc75f888413ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseMenu: {fileID: 115370914}
-  paused: 0
 --- !u!1 &256366917
 GameObject:
   m_ObjectHideFlags: 0
@@ -1749,6 +1731,11 @@ Prefab:
       propertyPath: tree
       value: 
       objectReference: {fileID: 1128196554}
+    - target: {fileID: 114664330801004762, guid: 1a752cd2fe6f13e44af0c50c43a4c267,
+        type: 2}
+      propertyPath: pauseMenu
+      value: 
+      objectReference: {fileID: 115370914}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1a752cd2fe6f13e44af0c50c43a4c267, type: 2}
   m_IsPrefabParent: 0
