@@ -36,9 +36,10 @@ public class shooting : MonoBehaviour {
 					hit.rigidbody.useGravity = true;
 					Invoke ("TreeFalling", 3); 
 				}
-				else if (hit.collider.tag == "WoodBlockade" && coated) {
+				else if (hit.collider.tag.Contains("WoodBlockade") && coated) {
                     player.followingLad.SetDestination(hit.collider.transform.position);
                     player.followingLad.transform.GetComponent<Animator>().Play("Walking");
+                    player.followingLad.transform.GetComponent<Rigidbody>().isKinematic = false;
 					//hit.collider.gameObject.SetActive(false);
 				}
 			}
