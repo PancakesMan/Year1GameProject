@@ -370,39 +370,13 @@ Prefab:
       propertyPath: pauseMenu
       value: 
       objectReference: {fileID: 288938923}
-    - target: {fileID: 114868449855496744, guid: 1a752cd2fe6f13e44af0c50c43a4c267,
-        type: 2}
-      propertyPath: tree
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1308751669425610, guid: 1a752cd2fe6f13e44af0c50c43a4c267, type: 2}
+    - target: {fileID: 1653426027341616, guid: 1a752cd2fe6f13e44af0c50c43a4c267, type: 2}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 65639744552705954, guid: 1a752cd2fe6f13e44af0c50c43a4c267,
-        type: 2}
-      propertyPath: m_Size.y
-      value: 0.7690928
-      objectReference: {fileID: 0}
-    - target: {fileID: 65639744552705954, guid: 1a752cd2fe6f13e44af0c50c43a4c267,
-        type: 2}
-      propertyPath: m_Center.x
-      value: -0.0075424905
-      objectReference: {fileID: 0}
-    - target: {fileID: 65639744552705954, guid: 1a752cd2fe6f13e44af0c50c43a4c267,
-        type: 2}
-      propertyPath: m_Center.y
-      value: 0.07264655
-      objectReference: {fileID: 0}
-    - target: {fileID: 65639744552705954, guid: 1a752cd2fe6f13e44af0c50c43a4c267,
-        type: 2}
-      propertyPath: m_Center.z
-      value: -0.00000202713
-      objectReference: {fileID: 0}
-    - target: {fileID: 65639744552705954, guid: 1a752cd2fe6f13e44af0c50c43a4c267,
-        type: 2}
-      propertyPath: m_Size.x
-      value: 1.6217421
+    - target: {fileID: 1308751669425610, guid: 1a752cd2fe6f13e44af0c50c43a4c267, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1a752cd2fe6f13e44af0c50c43a4c267, type: 2}
