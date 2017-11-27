@@ -7,8 +7,6 @@ using UnityStandardAssets.Characters.ThirdPerson;
 public class shooting : MonoBehaviour {
 
 	public Camera mainCam;
-	public Animator tree;
-    public GameObject collisionToggle;//, ThirdPersonObject;
     public GameObject ThirdPersonObject;
 
     [HideInInspector]
@@ -34,7 +32,6 @@ public class shooting : MonoBehaviour {
 				if (hit.collider.tag == "Boulder") {
 					Debug.Log ("You shot the boulder!");
 					hit.rigidbody.useGravity = true;
-					Invoke ("TreeFalling", 3); 
 				}
 				else if (hit.collider.tag.Contains("WoodBlockade") && coated) {
                     player.followingLad.SetDestination(hit.collider.transform.position);
@@ -44,18 +41,10 @@ public class shooting : MonoBehaviour {
 				}
 			}
             // Set coated to false
-            //coating must be re-applied after every shot
+            // coating must be re-applied after every shot
             coated = false;
 		}
 	}
-
-		
-	void TreeFalling()
-	{
-		tree.SetBool ("treeFalling", true);
-        collisionToggle.SetActive(false);
-    }
-
-	}
+}
 
 
