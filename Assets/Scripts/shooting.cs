@@ -41,16 +41,11 @@ public class shooting : MonoBehaviour {
                     player.followingLad.transform.GetComponent<Animator>().Play("Walking");
 					//hit.collider.gameObject.SetActive(false);
 				}
-
 			}
-
             // Set coated to false
             //coating must be re-applied after every shot
             coated = false;
 		}
-      
-	
-
 	}
 
 		
