@@ -8,7 +8,7 @@ public class TreeBoulderCollider : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Tree")
+        if (other.tag == "Boulder")
             tree.GetComponent<Animator>().SetBool("treeFalling", true);
     }
 }
