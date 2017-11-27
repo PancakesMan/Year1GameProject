@@ -2510,20 +2510,6 @@ Prefab:
       propertyPath: pauseMenu
       value: 
       objectReference: {fileID: 115370914}
-    - target: {fileID: 4557577940784920, guid: 1a752cd2fe6f13e44af0c50c43a4c267, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4557577940784920, guid: 1a752cd2fe6f13e44af0c50c43a4c267, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: -0.00000034273032
-      objectReference: {fileID: 0}
-    - target: {fileID: 114543858555603468, guid: 1a752cd2fe6f13e44af0c50c43a4c267,
-        type: 2}
-      propertyPath: profile
-      value: 
-      objectReference: {fileID: 11400000, guid: 7ed24c2812d199544bc8b6e0bbeba6c4,
-        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1a752cd2fe6f13e44af0c50c43a4c267, type: 2}
   m_IsPrefabParent: 0
