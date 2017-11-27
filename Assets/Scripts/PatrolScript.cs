@@ -17,13 +17,18 @@ public class PatrolScript : MonoBehaviour
 
     private NavMeshAgent agent;
     private Animator animator;
-    private GameObject player;
+    private GameObject[] players = new GameObject[2];
 
     // Use this for initialization
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        player = GameObject.FindGameObjectWithTag("Player");
+        players[0] = GameObject.Find("ThirdPersonController");
+
+        Transform[] trans = GameObject.Find("MultipurposeCameraRig").GetComponentsInChildren<Transform>(true);
+        foreach (Transform t in trans)
+            if (t.gameObject.name == "crossbow2")
+                players[1] = t.gameObject;
         animator = GetComponent<Animator>();
     }
 
@@ -48,6 +53,7 @@ public class PatrolScript : MonoBehaviour
 
     void NavigateTo()
     {
+        GameObject player = players[0].activeSelf ? players[0] : players[1];
         Vector3 targetDirection = player.transform.position - transform.position;
         float angleToPlayer = Vector3.Angle(targetDirection, transform.forward);
 
