@@ -1332,7 +1332,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8ad8e6b116414449a4ea39a31667935, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathMenu: {fileID: 1713760975309492, guid: a073e3a73c971864eaa4a949a47678c5, type: 2}
+  deathMenu: {fileID: 0}
 --- !u!114 &114863801734021034
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1348,7 +1348,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  waitTimeBetweenWaypoints: 1
+  waitTimeBetweenWaypoints: 5
   viewingAngle: 120
   viewingDistance: 50
 --- !u!137 &137102055560837390

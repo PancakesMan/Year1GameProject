@@ -2488,6 +2488,7 @@ GameObject:
   - component: {fileID: 136757380758597408}
   - component: {fileID: 114779711643112894}
   - component: {fileID: 114824161666954780}
+  - component: {fileID: 114432828455309142}
   m_Layer: 0
   m_Name: ThirdPersonController
   m_TagString: Player
@@ -4856,15 +4857,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1771244104804328}
-  m_LocalRotation: {x: 0.010234342, y: 0.99891657, z: 0.045081373, w: -0.0053533837}
-  m_LocalPosition: {x: 101.3, y: 9.47, z: 37.17}
+  m_LocalRotation: {x: -0.008851022, y: 0.9954816, z: 0.01868288, w: 0.09267686}
+  m_LocalPosition: {x: 28.4, y: 10.09, z: 10.88}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4153413146155646}
   - {fileID: 4160803879968124}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -5.1740003, y: -179.438, z: 1.149}
+  m_LocalEulerAnglesHint: {x: -2.226, y: 169.378, z: -0.81200004}
 --- !u!4 &4991304034501556
 Transform:
   m_ObjectHideFlags: 1
@@ -5271,6 +5272,20 @@ MonoBehaviour:
   - {fileID: 1982168021917864}
   FirstPersonObjects:
   - {fileID: 1308751669425610}
+--- !u!114 &114432828455309142
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1982168021917864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ffd35ba01b863d4c90ea48da43d0ab5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crossbow: {fileID: 0}
+  thirdTalking: {fileID: 0}
+  fog1: {fileID: 0}
 --- !u!114 &114543858555603468
 MonoBehaviour:
   m_ObjectHideFlags: 1
