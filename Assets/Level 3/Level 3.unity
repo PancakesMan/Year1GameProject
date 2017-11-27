@@ -5544,29 +5544,9 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 4769761791258634, guid: 37825dc150dacde45b47159f078ae0fc, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 25.994001
-      objectReference: {fileID: 0}
-    - target: {fileID: 4769761791258634, guid: 37825dc150dacde45b47159f078ae0fc, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -25.538002
-      objectReference: {fileID: 0}
-    - target: {fileID: 4769761791258634, guid: 37825dc150dacde45b47159f078ae0fc, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 98.239006
-      objectReference: {fileID: 0}
     - target: {fileID: 1692712686554400, guid: 37825dc150dacde45b47159f078ae0fc, type: 2}
       propertyPath: m_Name
       value: GodRays (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4769761791258634, guid: 37825dc150dacde45b47159f078ae0fc, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4769761791258634, guid: 37825dc150dacde45b47159f078ae0fc, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 37825dc150dacde45b47159f078ae0fc, type: 2}
