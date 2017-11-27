@@ -1891,6 +1891,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4985510194477806}
   - component: {fileID: 114431753636285932}
+  - component: {fileID: 114664330801004762}
   m_Layer: 0
   m_Name: PlagueDoctorPrefab
   m_TagString: Player
@@ -5269,6 +5270,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   profile: {fileID: 0}
+--- !u!114 &114664330801004762
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1771244104804328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06b4f10bc482e5b4485bc75f888413ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 0}
+  paused: 0
 --- !u!114 &114779711643112894
 MonoBehaviour:
   m_ObjectHideFlags: 1
