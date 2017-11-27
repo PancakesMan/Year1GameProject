@@ -54,6 +54,12 @@ public class LadScript : MonoBehaviour {
             nearBlockade = true;
             nearestBlockade = other.gameObject;
         }
+        else if (other.gameObject.tag == "SpecialWoodBlockade")
+        {
+            GetComponent<Rigidbody>().isKinematic = true;
+            agent.isStopped = true;
+            animator.Play("Lad Eating");
+        }
         else if (other.gameObject.tag == "Egg" && eatenBlockade)
             gameObject.SetActive(false);
     }
