@@ -9,15 +9,15 @@ public class LadScript : MonoBehaviour {
     private Vector3 position;
 
     public bool nearBlockade = false;
-    [HideInInspector]
-    public GameObject nearestBlockade;
+    public bool eatenBlockade = false;
+    private GameObject nearestBlockade;
 
 	// Use this for initialization
 	void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
-        position = transform.position;
+        position = transform.parent.Find("EggAnim").transform.position;
 	}
 	
 	// Update is called once per frame
@@ -26,9 +26,35 @@ public class LadScript : MonoBehaviour {
         if (nearBlockade)
         {
             animator.Play("Lad Eating");
-            nearestBlockade.SetActive(false);
-            nearestBlockade = null;
-            nearBlockade = false;
+            StartCoroutine(DisableBlockade());
+            StartCoroutine(ReturnToEgg());
         }
 	}
+
+    IEnumerator DisableBlockade()
+    {
+        yield return new WaitForSecondsRealtime(2);
+        nearestBlockade.SetActive(false);
+        nearestBlockade = null;
+        eatenBlockade = true;
+        nearBlockade = false;
+    }
+
+    IEnumerator ReturnToEgg()
+    {
+        yield return new WaitForSecondsRealtime(2);
+        agent.SetDestination(position);
+        animator.Play("Walking");
+    }
+
+    void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.tag == "WoodBlockade")
+        {
+            nearBlockade = true;
+            nearestBlockade = other.gameObject;
+        }
+        else if (other.gameObject.tag == "Egg" && eatenBlockade)
+            gameObject.SetActive(false);
+    }
 }
