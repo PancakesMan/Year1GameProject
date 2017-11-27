@@ -11,6 +11,9 @@ TagManager:
   - Collision Toggle
   - 1stPerson
   - Lad
+  - DeathMenu
+  - MainCanvas
+  - PauseMenuCanvas
   layers:
   - Default
   - TransparentFX
