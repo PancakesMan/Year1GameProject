@@ -805,7 +805,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1310059248898000
 GameObject:
   m_ObjectHideFlags: 1
@@ -4861,7 +4861,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1771244104804328}
   m_LocalRotation: {x: -0.027945353, y: -0.40158507, z: -0.049232967, w: -0.91407037}
-  m_LocalPosition: {x: 58.78, y: 42.3, z: 15.88}
+  m_LocalPosition: {x: 45.638, y: 48.454, z: 93.919}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4153413146155646}
@@ -5045,8 +5045,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 6.4202995, y: 10.031743, z: 1}
-  m_Center: {x: -0.75893575, y: -2.1974885, z: -0.000000020438138}
+  m_Size: {x: 1.6217421, y: 0.7690928, z: 1}
+  m_Center: {x: -0.0075424905, y: 0.07264655, z: -0.00000202713}
 --- !u!81 &81212738300597220
 AudioListener:
   m_ObjectHideFlags: 1
@@ -5463,8 +5463,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCam: {fileID: 20583203296245566}
-  tree: {fileID: 0}
-  collisionToggle: {fileID: 0}
   ThirdPersonObject: {fileID: 1982168021917864}
   coated: 0
 --- !u!114 &114955574038239270
