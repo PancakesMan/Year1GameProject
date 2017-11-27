@@ -12,7 +12,8 @@ TagManager:
   - 1stPerson
   - Lad
   - DeathMenu
-  - Crossbow
+  - MainCanvas
+  - PauseMenuCanvas
   layers:
   - Default
   - TransparentFX
