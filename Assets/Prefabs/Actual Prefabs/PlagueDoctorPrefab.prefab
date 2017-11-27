@@ -798,6 +798,7 @@ GameObject:
   - component: {fileID: 92177419660000204}
   - component: {fileID: 81329643318584364}
   - component: {fileID: 114142286624618784}
+  - component: {fileID: 114091391092908514}
   m_Layer: 0
   m_Name: FPS Camera
   m_TagString: 1stPerson
@@ -5207,6 +5208,18 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &114091391092908514
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1308751669425610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: 11400000, guid: 7ed24c2812d199544bc8b6e0bbeba6c4, type: 2}
 --- !u!114 &114142286624618784
 MonoBehaviour:
   m_ObjectHideFlags: 1
