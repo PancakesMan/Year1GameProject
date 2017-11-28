@@ -20,7 +20,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         private bool m_Jump;                      
 		private bool m_crouching = false;
         private float crouch_cd = 0.25f;          // Cooldown for crouching toggle
-        private float footstep_cd = 0.1f;
+        private float footstep_cd = 0.25f;
 
         public bool userHasControl = true;        // Used to disable player controls
         public GameObject text;
@@ -140,7 +140,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
             if (m_Move != Vector3.zero && footstep_cd <= 0.0f)
             {
-                footstep_cd = 0.1f;
+                footstep_cd = 0.25f;
                 int n = UnityEngine.Random.Range(1, footsteps.Count);
                 audio.clip = footsteps[n];
                 audio.PlayOneShot(audio.clip);
