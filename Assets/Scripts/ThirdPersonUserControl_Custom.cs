@@ -20,6 +20,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         private float crouch_cd = 0.25f;          // Cooldown for crouching toggle
 
         public bool userHasControl = true;        // Used to disable player controls
+        public float hideTextDelay = 1.0f;
+        public GameObject text;
         [HideInInspector]
         public NavMeshAgent followingLad;
         [HideInInspector]
@@ -54,7 +56,6 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             ShootingScript = transform.parent.GetComponentInChildren<shooting>(true);
         }
 
-
         private void Update()
         {
             if (!m_Jump)
@@ -66,6 +67,17 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             // Stop egg stabbing animation
 			m_Animator.SetBool("collidingWithEgg", false);
 		}
+
+        void ShowText()
+        {
+            text.SetActive(true);
+            Invoke("HideText", hideTextDelay);
+        }
+
+        void HideText()
+        {
+            text.SetActive(false);
+        }
 
         // Fixed update is called in sync with physics
         private void FixedUpdate()
@@ -92,6 +104,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
                 // The arrow is now coated
                 ShootingScript.coated = true;
+                ShowText();
 			}
 			    
 
