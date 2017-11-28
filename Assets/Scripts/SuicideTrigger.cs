@@ -27,6 +27,9 @@ public class SuicideTrigger : MonoBehaviour {
         fpsToggle.active = false;
         animator.Play("Commit");
         Invoke("LoadFinalScene", delay);
+
+        GameObject.Find("Pivot").SetActive(false);
+        GameObject.Find("DeathView").SetActive(true);
     }
 
     void LoadFinalScene()
