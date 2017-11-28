@@ -14,17 +14,20 @@ public class shooting : MonoBehaviour {
 
     private Animator xbowAnimator;
     private ThirdPersonUserControl_Custom player;
+    private _31Toggle ChangeModeController;
 
     void Start()
     {
         xbowAnimator = GetComponent<Animator>();
         player = ThirdPersonObject.GetComponent<ThirdPersonUserControl_Custom>();
+        ChangeModeController = GameObject.Find("PlagueDoctorPrefab").GetComponent<_31Toggle>();
     }
 
     void Update ()
 	{
 		if (Input.GetMouseButtonDown (0)) {
             xbowAnimator.SetBool("xbowFired", true);
+            ChangeModeController.cd = -3.6f;
             Invoke("ResetXbow", 2);
 
 			RaycastHit hit;

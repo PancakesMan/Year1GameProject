@@ -8,7 +8,7 @@ public class _31Toggle : MonoBehaviour {
     public List<GameObject> FirstPersonObjects;
 
     bool first, third;
-    private float cd;
+    public float cd;
 
 	// Use this for initialization
 	void Start () {
