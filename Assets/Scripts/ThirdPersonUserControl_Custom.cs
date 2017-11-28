@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityStandardAssets.CrossPlatformInput;
@@ -14,13 +15,17 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         private Vector3 m_CamForward;             // The current forward direction of the camera
         private Vector3 m_Move;                   // The world-relative desired move direction, calculated from the camForward and user input.
         private shooting ShootingScript;          // A reference to the player's ShootingScript
+        private AudioSource audio;
 
         private bool m_Jump;                      
 		private bool m_crouching = false;
         private float crouch_cd = 0.25f;          // Cooldown for crouching toggle
+        private float footstep_cd;
 
+        public float FOOTSTEP_CD = 0.25f;
         public bool userHasControl = true;        // Used to disable player controls
         public GameObject text;
+        public List<AudioClip> footsteps;
         [HideInInspector]
         public NavMeshAgent followingLad;
         [HideInInspector]
@@ -53,6 +58,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             // Get the player's Shooting Script
             // which is attached to a sibling's child
             ShootingScript = transform.parent.GetComponentInChildren<shooting>(true);
+            audio = GetComponent<AudioSource>();
+            footstep_cd = FOOTSTEP_CD;
         }
 
         private void Update()
@@ -81,6 +88,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         private void FixedUpdate()
         {
             crouch_cd -= Time.deltaTime;
+            footstep_cd -= Time.deltaTime;
 
 			if (Input.GetKey(KeyCode.E) && collidingWithEgg)
             {
@@ -132,6 +140,15 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                 m_Move = v * Vector3.forward + h * Vector3.right;
             }
 
+            if (m_Move != Vector3.zero && footstep_cd <= 0.0f)
+            {
+                footstep_cd = FOOTSTEP_CD;
+                int n = UnityEngine.Random.Range(1, footsteps.Count);
+                audio.clip = footsteps[n];
+                audio.PlayOneShot(audio.clip);
+                footsteps[n] = footsteps[0];
+                footsteps[0] = audio.clip;
+            }
             
 		    m_Character.Move(m_Move * (userHasControl ? 1 : 0), m_crouching, m_Jump && userHasControl);
             m_Jump = false;
