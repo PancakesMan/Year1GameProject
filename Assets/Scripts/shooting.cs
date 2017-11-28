@@ -24,8 +24,9 @@ public class shooting : MonoBehaviour {
     void Update ()
 	{
 		if (Input.GetMouseButtonDown (0)) {
-            xbowAnimator.SetBool("xbowFired", false);
             xbowAnimator.SetBool("xbowFired", true);
+            Invoke("ResetXbow", 2);
+
 			RaycastHit hit;
 			Ray ray = mainCam.ScreenPointToRay (Input.mousePosition); 
 			if (Physics.Raycast (ray, out hit)) {
@@ -41,11 +42,17 @@ public class shooting : MonoBehaviour {
 					//hit.collider.gameObject.SetActive(false);
 				}
 			}
+
             // Set coated to false
             // coating must be re-applied after every shot
             coated = false;
-		}
+        }
 	}
+
+    void ResetXbow()
+    {
+        xbowAnimator.SetBool("xbowFired", false);
+    }
 }
 
 
