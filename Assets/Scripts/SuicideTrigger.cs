@@ -7,7 +7,7 @@ public class SuicideTrigger : MonoBehaviour {
 
     private Animator animator;
     private ThirdPersonUserControl_Custom controller;
-    _31Toggle fpsToggle;
+    private _31Toggle fpsToggle;
 
     public Object scene;
     public float delay = 5.0f;
