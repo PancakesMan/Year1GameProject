@@ -5,20 +5,22 @@ using UnityEngine.AI;
 
 public class SpecialBigBoi : MonoBehaviour {
 
-    private GameObject lad;
+    private List<GameObject> lads;
 
 	// Use this for initialization
 	void Start () {
-        lad = GameObject.FindGameObjectWithTag("Lad");
+        lads = new List<GameObject>(GameObject.FindGameObjectsWithTag("Lad"));
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (lad.GetComponent<LadScript>().specialBlockade == true)
-        {
-            GetComponent<PatrolScript>().enabled = false;
-            GetComponent<NavMeshAgent>().SetDestination(lad.transform.position);
-        }
+        foreach (GameObject lad in lads)
+		    if (lad.GetComponent<LadScript>().specialBlockade == true)
+            {
+                GetComponent<PatrolScript>().enabled = false;
+                GetComponent<NavMeshAgent>().SetDestination(lad.transform.position);
+                break;
+            }
 	}
 
     void OnTriggerEnter(Collider other)
