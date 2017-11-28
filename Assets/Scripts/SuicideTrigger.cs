@@ -6,7 +6,7 @@ public class SuicideTrigger : MonoBehaviour {
 
     private Animator animator;
 
-    public GameObject scene;
+    public Object scene;
     public float delay = 5.0f;
 
 	// Use this for initialization
