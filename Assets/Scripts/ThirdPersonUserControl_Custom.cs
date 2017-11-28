@@ -20,8 +20,9 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         private bool m_Jump;                      
 		private bool m_crouching = false;
         private float crouch_cd = 0.25f;          // Cooldown for crouching toggle
-        private float footstep_cd = 0.25f;
+        private float footstep_cd;
 
+        public float FOOTSTEP_CD = 0.25f;
         public bool userHasControl = true;        // Used to disable player controls
         public GameObject text;
         public List<AudioClip> footsteps;
@@ -58,6 +59,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             // which is attached to a sibling's child
             ShootingScript = transform.parent.GetComponentInChildren<shooting>(true);
             audio = GetComponent<AudioSource>();
+            footstep_cd = FOOTSTEP_CD;
         }
 
         private void Update()
@@ -140,7 +142,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
             if (m_Move != Vector3.zero && footstep_cd <= 0.0f)
             {
-                footstep_cd = 0.25f;
+                footstep_cd = FOOTSTEP_CD;
                 int n = UnityEngine.Random.Range(1, footsteps.Count);
                 audio.clip = footsteps[n];
                 audio.PlayOneShot(audio.clip);
