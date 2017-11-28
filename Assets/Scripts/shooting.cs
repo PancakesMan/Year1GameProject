@@ -24,7 +24,8 @@ public class shooting : MonoBehaviour {
     void Update ()
 	{
 		if (Input.GetMouseButtonDown (0)) {
-            xbowAnimator.SetBool ("xbowFired",true);
+            xbowAnimator.SetBool("xbowFired", false);
+            xbowAnimator.SetBool("xbowFired", true);
 			RaycastHit hit;
 			Ray ray = mainCam.ScreenPointToRay (Input.mousePosition); 
 			if (Physics.Raycast (ray, out hit)) {
