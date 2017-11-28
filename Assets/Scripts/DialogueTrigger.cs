@@ -12,21 +12,29 @@ public class DialogueTrigger : MonoBehaviour {
     public List<string> altDialogueLines = new List<string>();
     public bool altDialogueOption = false;
     public bool alreadyTriggered = false;
+    public bool enableModeChangeUponCompletion = true;
     public float characterTimeout;
 
     // Below, add your character controller name. e.g. CharControlCustom charController;
     ThirdPersonUserControl_Custom charUserControl;
+    _31Toggle modeController;
     public Text dialogueBox;
     public GameObject textBackground;
 
     int currentLine = 0;
     bool currentlyActive, cr_running = false;
 
+    void Start()
+    {
+        modeController = GameObject.Find("PlagueDoctorPrefab").GetComponent<_31Toggle>();
+    }
+
     void OnTriggerEnter(Collider other)
     {
         Debug.Log("Trigger entered by " + other.gameObject);
         if (other.tag == "Player" && !alreadyTriggered)
         {
+            modeController.active = false;
             if (altDialogueOption)
             {
                 dialogToUse = altDialogueLines;
@@ -64,6 +72,7 @@ public class DialogueTrigger : MonoBehaviour {
             {
                 textBackground.SetActive(false);
                 charUserControl.userHasControl = true;
+                modeController.active = enableModeChangeUponCompletion;
                 gameObject.SetActive(false);
                 currentlyActive = false;
             }
