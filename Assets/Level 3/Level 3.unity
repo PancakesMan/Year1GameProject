@@ -4639,6 +4639,15 @@ Prefab:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 95451381514034426, guid: d08592e4a07178742a13251ded1b9354,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 3bc6a2b0a7fe1c84b9e8cf85bf51d904, type: 2}
+    - target: {fileID: 4187726539260810, guid: d08592e4a07178742a13251ded1b9354, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.8388809
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d08592e4a07178742a13251ded1b9354, type: 2}
   m_IsPrefabParent: 0

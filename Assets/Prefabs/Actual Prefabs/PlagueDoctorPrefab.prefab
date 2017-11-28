@@ -851,7 +851,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1335249728456058
 GameObject:
   m_ObjectHideFlags: 1
@@ -5581,6 +5581,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crossbow: {fileID: 0}
+  backCrossbow: {fileID: 1332712660072882}
   thirdTalking: {fileID: 0}
   fog1: {fileID: 0}
 --- !u!114 &114955574038239270

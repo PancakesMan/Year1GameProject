@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0056279744, g: 0.0055943513, b: 0.0056279744, a: 1}
+  m_IndirectSpecularColor: {r: 0.0056247804, g: 0.0055973534, b: 0.0056247804, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -189,15 +189,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114664330801004762, guid: 1a752cd2fe6f13e44af0c50c43a4c267,
-        type: 2}
-      propertyPath: pauseMenu
-      value: 
-      objectReference: {fileID: 838422297}
-    - target: {fileID: 1771244104804328, guid: 1a752cd2fe6f13e44af0c50c43a4c267, type: 2}
-      propertyPath: m_Name
-      value: PlagueDoctorPrefab (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 114883748128408062, guid: 1a752cd2fe6f13e44af0c50c43a4c267,
         type: 2}
       propertyPath: crossbow
@@ -213,8 +204,20 @@ Prefab:
       propertyPath: fog1
       value: 
       objectReference: {fileID: 416662632}
-    m_RemovedComponents:
-    - {fileID: 114432828455309142, guid: 1a752cd2fe6f13e44af0c50c43a4c267, type: 2}
+    - target: {fileID: 114664330801004762, guid: 1a752cd2fe6f13e44af0c50c43a4c267,
+        type: 2}
+      propertyPath: pauseMenu
+      value: 
+      objectReference: {fileID: 838422297}
+    - target: {fileID: 1771244104804328, guid: 1a752cd2fe6f13e44af0c50c43a4c267, type: 2}
+      propertyPath: m_Name
+      value: PlagueDoctorPrefab (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332712660072882, guid: 1a752cd2fe6f13e44af0c50c43a4c267, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1a752cd2fe6f13e44af0c50c43a4c267, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &59207840
