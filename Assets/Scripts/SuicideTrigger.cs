@@ -8,7 +8,7 @@ public class SuicideTrigger : MonoBehaviour {
     private Animator animator;
     private ThirdPersonUserControl_Custom controller;
     private _31Toggle fpsToggle;
-    private Camera playerCamera;
+    private GameObject playerCamera;
     private GameObject deathView;
 
     public Object scene;
@@ -21,7 +21,7 @@ public class SuicideTrigger : MonoBehaviour {
         animator = player.GetComponent<Animator>();
         controller = player.GetComponent<ThirdPersonUserControl_Custom>();
         fpsToggle = GameObject.Find("PlagueDoctorPrefab").GetComponent<_31Toggle>();
-        playerCamera = Camera.main;
+        playerCamera = GameObject.Find("MainCamera");
         deathView = GameObject.Find("DeathView");
 
     }
@@ -32,7 +32,7 @@ public class SuicideTrigger : MonoBehaviour {
         fpsToggle.active = false;
         animator.Play("Commit");
         Invoke("LoadFinalScene", delay);
-        playerCamera.enabled = false;
+        playerCamera.SetActive(false);
         deathView.SetActive(true);
     }
 
