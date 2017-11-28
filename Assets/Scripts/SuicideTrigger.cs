@@ -7,19 +7,25 @@ public class SuicideTrigger : MonoBehaviour {
 
     private Animator animator;
     private ThirdPersonUserControl_Custom controller;
+    _31Toggle fpsToggle;
 
     public Object scene;
     public float delay = 5.0f;
 
 	// Use this for initialization
 	void Start () {
-        animator = GameObject.Find("ThirdPersonController").GetComponent<Animator>();
-        controller = GameObject.Find("ThirdPersonController").GetComponent<ThirdPersonUserControl_Custom>();
-	}
+        GameObject player = GameObject.Find("ThirdPersonController");
+
+        animator = player.GetComponent<Animator>();
+        controller = player.GetComponent<ThirdPersonUserControl_Custom>();
+        fpsToggle = player.GetComponent<_31Toggle>();
+
+    }
 
     void OnDisable()
     {
         controller.userHasControl = false;
+        fpsToggle.active = false;
         animator.Play("Commit");
         Invoke("LoadFinalScene", delay);
     }
