@@ -80,6 +80,7 @@ GameObject:
   - component: {fileID: 23393110907446900}
   - component: {fileID: 95199884303700998}
   - component: {fileID: 65975334780714930}
+  - component: {fileID: 208010095902766212}
   m_Layer: 0
   m_Name: Log (4)
   m_TagString: Untagged
@@ -150,9 +151,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1733223741673354}
-  m_LocalRotation: {x: 0.009371838, y: 0.6961392, z: 0.0038834868, w: 0.7178352}
-  m_LocalPosition: {x: 87.94, y: 42.21, z: 41.35}
-  m_LocalScale: {x: 0.98524755, y: 0.10411178, z: 3.919701}
+  m_LocalRotation: {x: -0, y: -0.8994938, z: -0, w: 0.43693364}
+  m_LocalPosition: {x: 38.438, y: -2.22, z: 19.698}
+  m_LocalScale: {x: 0.8867228, y: 0.087800816, z: 3.5277312}
   m_Children:
   - {fileID: 4921114579910810}
   - {fileID: 4388541899600766}
@@ -497,3 +498,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!208 &208010095902766212
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1733223741673354}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1, y: 1, z: 1}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5

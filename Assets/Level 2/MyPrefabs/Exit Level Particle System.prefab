@@ -54,14 +54,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1182970494946486}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 76.2, y: 9.5, z: 86.7}
+  m_LocalRotation: {x: -0.7021338, y: -0.083715186, z: -0.083715186, w: 0.7021338}
+  m_LocalPosition: {x: 29.21, y: 21.351885, z: 58.51}
   m_LocalScale: {x: 2.0713143, y: 0.81117, z: 2.9150155}
   m_Children:
   - {fileID: 4900350944443056}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: -13.599001}
 --- !u!4 &4900350944443056
 Transform:
   m_ObjectHideFlags: 1
@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23069b58648b824498b60d37db12bcb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: {fileID: 102900000, guid: e8fce61bd5f35bf46b2a429adf2007da, type: 3}
+  nextScene: {fileID: 102900000, guid: c0fea3b0fa83ebe44b248a98f7b3fdae, type: 3}
 --- !u!198 &198374271747796230
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -298,7 +298,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      maxColor: {r: 0.52205884, g: 0.52205884, b: 0.52205884, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
