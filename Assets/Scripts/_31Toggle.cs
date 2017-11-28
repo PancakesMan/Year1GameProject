@@ -8,7 +8,6 @@ public class _31Toggle : MonoBehaviour {
     public List<GameObject> FirstPersonObjects;
 
     bool first, third;
-    public bool active = true;
     public float cd;
 
 	// Use this for initialization
@@ -22,7 +21,7 @@ public class _31Toggle : MonoBehaviour {
 	void Update () {
         cd += Time.deltaTime;
 
-        if (Input.GetMouseButtonDown(1) && cd > 0.25f && active)
+        if (Input.GetMouseButtonDown(1) && cd > 0.25f)
         {
             foreach (GameObject go in FirstPersonObjects)
                 go.SetActive(!first);
