@@ -7,7 +7,7 @@ public class SuicideTrigger : MonoBehaviour {
 
     private Animator animator;
     private ThirdPersonUserControl_Custom controller;
-    _31Toggle fpsToggle;
+    private _31Toggle fpsToggle;
 
     public Object scene;
     public float delay = 5.0f;
@@ -18,7 +18,7 @@ public class SuicideTrigger : MonoBehaviour {
 
         animator = player.GetComponent<Animator>();
         controller = player.GetComponent<ThirdPersonUserControl_Custom>();
-        fpsToggle = player.GetComponent<_31Toggle>();
+        fpsToggle = GameObject.Find("PlagueDoctorPrefab").GetComponent<_31Toggle>();
 
     }
 
