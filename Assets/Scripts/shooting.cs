@@ -14,17 +14,22 @@ public class shooting : MonoBehaviour {
 
     private Animator xbowAnimator;
     private ThirdPersonUserControl_Custom player;
+    private _31Toggle ChangeModeController;
 
     void Start()
     {
         xbowAnimator = GetComponent<Animator>();
         player = ThirdPersonObject.GetComponent<ThirdPersonUserControl_Custom>();
+        ChangeModeController = GameObject.Find("PlagueDoctorPrefab").GetComponent<_31Toggle>();
     }
 
     void Update ()
 	{
 		if (Input.GetMouseButtonDown (0)) {
-            xbowAnimator.SetBool ("xbowFired",true);
+            xbowAnimator.SetBool("xbowFired", true);
+            ChangeModeController.cd = -3.6f;
+            Invoke("ResetXbow", 2);
+
 			RaycastHit hit;
 			Ray ray = mainCam.ScreenPointToRay (Input.mousePosition); 
 			if (Physics.Raycast (ray, out hit)) {
@@ -40,11 +45,17 @@ public class shooting : MonoBehaviour {
 					//hit.collider.gameObject.SetActive(false);
 				}
 			}
+
             // Set coated to false
             // coating must be re-applied after every shot
             coated = false;
-		}
+        }
 	}
+
+    void ResetXbow()
+    {
+        xbowAnimator.SetBool("xbowFired", false);
+    }
 }
 
 
