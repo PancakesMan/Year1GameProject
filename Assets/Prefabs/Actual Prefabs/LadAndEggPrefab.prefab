@@ -1561,8 +1561,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1854930642611112}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 121.89, y: 11.218, z: 81.61}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 31.58, y: 21.274, z: 45.125}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4628718755595668}
@@ -2147,13 +2147,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1736130633103030}
-  m_LocalRotation: {x: -0, y: -0.46352586, z: -0, w: 0.8860834}
-  m_LocalPosition: {x: -1.6259995, y: -0.7960005, z: -0.88100433}
+  m_LocalRotation: {x: -0, y: -0.7789176, z: -0, w: 0.62712634}
+  m_LocalPosition: {x: -1.6259995, y: -1.0100002, z: -1.5099983}
   m_LocalScale: {x: 0.65278673, y: 0.6527866, z: 0.65278673}
   m_Children: []
   m_Father: {fileID: 4366172852709442}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: -55.230003, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -102.323006, z: 0}
 --- !u!4 &4860220144765352
 Transform:
   m_ObjectHideFlags: 1
@@ -2190,7 +2190,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1302741103190482}
   m_LocalRotation: {x: -0, y: 0.99718976, z: -0, w: 0.07491825}
-  m_LocalPosition: {x: -1.277, y: -1.174, z: 0.837}
+  m_LocalPosition: {x: -1.259, y: -1.174, z: 0.715}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4787457638185064}
@@ -2364,7 +2364,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -2481,7 +2481,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: ea0d3cbff6f53274480d9fd9991bf2e1, type: 2}
+  - {fileID: 2100000, guid: 1d1c5d7e010215e46818ed02c130741e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
