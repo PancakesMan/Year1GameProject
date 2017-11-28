@@ -71,10 +71,10 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         void ShowText()
         {
             text.SetActive(true);
-            Invoke("HideText", hideTextDelay);
+            Invoke("HideText", hideTextDelay)
         }
 
-        void HideText()
+        public void HideText()
         {
             text.SetActive(false);
         }

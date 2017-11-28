@@ -49,6 +49,7 @@ public class shooting : MonoBehaviour {
             // Set coated to false
             // coating must be re-applied after every shot
             coated = false;
+            player.HideText();
         }
 	}
 
