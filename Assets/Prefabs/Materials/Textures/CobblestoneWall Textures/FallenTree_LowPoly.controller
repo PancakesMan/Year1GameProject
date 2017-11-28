@@ -27,7 +27,11 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
+<<<<<<< HEAD
 --- !u!1101 &1101326801498689940
+=======
+--- !u!1101 &1101028032577619724
+>>>>>>> 586389aaf33f41a66f5bc8cadc304581555a68f2
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -38,7 +42,11 @@ AnimatorStateTransition:
     m_ConditionEvent: treeFalling
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
+<<<<<<< HEAD
   m_DstState: {fileID: 1102293653103062948}
+=======
+  m_DstState: {fileID: 1102036806507492278}
+>>>>>>> 586389aaf33f41a66f5bc8cadc304581555a68f2
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
@@ -51,13 +59,21 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+<<<<<<< HEAD
 --- !u!1102 &1102293653103062948
+=======
+--- !u!1102 &1102036806507492278
+>>>>>>> 586389aaf33f41a66f5bc8cadc304581555a68f2
 AnimatorState:
   serializedVersion: 5
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+<<<<<<< HEAD
   m_Name: Level2SecondTree
+=======
+  m_Name: Level3Tree1
+>>>>>>> 586389aaf33f41a66f5bc8cadc304581555a68f2
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -69,7 +85,11 @@ AnimatorState:
   m_SpeedParameterActive: 0
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
+<<<<<<< HEAD
   m_Motion: {fileID: 7400000, guid: 9dafd9e47b810d548b8d4e70588ca78c, type: 2}
+=======
+  m_Motion: {fileID: 7400000, guid: aeb50cf9d5716e249b4df42940deec34, type: 2}
+>>>>>>> 586389aaf33f41a66f5bc8cadc304581555a68f2
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -84,7 +104,11 @@ AnimatorState:
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
+<<<<<<< HEAD
   - {fileID: 1101326801498689940}
+=======
+  - {fileID: 1101028032577619724}
+>>>>>>> 586389aaf33f41a66f5bc8cadc304581555a68f2
   m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
@@ -110,8 +134,13 @@ AnimatorStateMachine:
     m_State: {fileID: 1102878033946661386}
     m_Position: {x: 204, y: 156, z: 0}
   - serializedVersion: 1
+<<<<<<< HEAD
     m_State: {fileID: 1102293653103062948}
     m_Position: {x: 274, y: 286, z: 0}
+=======
+    m_State: {fileID: 1102036806507492278}
+    m_Position: {x: 216, y: 240, z: 0}
+>>>>>>> 586389aaf33f41a66f5bc8cadc304581555a68f2
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []

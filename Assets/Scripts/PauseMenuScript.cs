@@ -19,20 +19,26 @@ public class PauseMenuScript : MonoBehaviour
             {
                 paused = !paused;
                 cd = 0.5f;
+                PauseUnpause();
             }
+        }
+    }
 
-            if (paused)
-            {
-                pauseMenu.SetActive(true);
-                Cursor.lockState = CursorLockMode.None;
-                Cursor.visible = true;
-                Time.timeScale = 0;
-            }
-            else
-            {
-                pauseMenu.SetActive(false);
-                Time.timeScale = 1;
-            }
+    public void PauseUnpause()
+    {
+        if (paused)
+        {
+            pauseMenu.SetActive(true);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            Time.timeScale = 0;
+        }
+        else
+        {
+            pauseMenu.SetActive(false);
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+            Time.timeScale = 1;
         }
     }
 
@@ -40,7 +46,6 @@ public class PauseMenuScript : MonoBehaviour
     {
         PauseMenuScript player = GameObject.Find("PlagueDoctorPrefab").GetComponent<PauseMenuScript>();
         player.paused = false;
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        player.PauseUnpause();
     }
 }
