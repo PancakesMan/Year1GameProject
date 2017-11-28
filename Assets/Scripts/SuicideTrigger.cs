@@ -6,6 +6,9 @@ public class SuicideTrigger : MonoBehaviour {
 
     private Animator animator;
 
+    public GameObject scene;
+    public float delay = 5.0f;
+
 	// Use this for initialization
 	void Start () {
         animator = GetComponent<Animator>();
@@ -16,6 +19,12 @@ public class SuicideTrigger : MonoBehaviour {
         if (other.tag == "Suicide")
         {
             animator.Play("Commit");
+            Invoke("LoadFinalScene", delay);
         }
+    }
+
+    void LoadFinalScene()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(scene.name);
     }
 }
