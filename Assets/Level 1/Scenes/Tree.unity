@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0056247804, g: 0.0055973534, b: 0.0056247804, a: 1}
+  m_IndirectSpecularColor: {r: 0.0056279744, g: 0.0055943513, b: 0.0056279744, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -156,7 +156,23 @@ Prefab:
       propertyPath: m_Name
       value: PlagueDoctorPrefab (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114883748128408062, guid: 1a752cd2fe6f13e44af0c50c43a4c267,
+        type: 2}
+      propertyPath: crossbow
+      value: 
+      objectReference: {fileID: 664884958}
+    - target: {fileID: 114883748128408062, guid: 1a752cd2fe6f13e44af0c50c43a4c267,
+        type: 2}
+      propertyPath: thirdTalking
+      value: 
+      objectReference: {fileID: 1000847688}
+    - target: {fileID: 114883748128408062, guid: 1a752cd2fe6f13e44af0c50c43a4c267,
+        type: 2}
+      propertyPath: fog1
+      value: 
+      objectReference: {fileID: 416662632}
+    m_RemovedComponents:
+    - {fileID: 114432828455309142, guid: 1a752cd2fe6f13e44af0c50c43a4c267, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 1a752cd2fe6f13e44af0c50c43a4c267, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &59207840
@@ -1212,25 +1228,6 @@ Transform:
   m_Father: {fileID: 1298647042}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: -366.415, z: 0}
---- !u!1 &563166528 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1982168021917864, guid: 1a752cd2fe6f13e44af0c50c43a4c267,
-    type: 2}
-  m_PrefabInternal: {fileID: 33553959}
---- !u!114 &563166536
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 563166528}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ffd35ba01b863d4c90ea48da43d0ab5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  crossbow: {fileID: 664884958}
-  thirdTalking: {fileID: 1000847688}
-  fog1: {fileID: 416662632}
 --- !u!1 &564947904
 GameObject:
   m_ObjectHideFlags: 0
