@@ -6,6 +6,7 @@ using UnityEngine;
 		
 	public GameObject target;
 	public float rotateSpeed = 10;
+    public float X, Y;
 
     public float LookLeftRight, LookUpDown;
 
@@ -22,8 +23,8 @@ using UnityEngine;
         LookLeftRight += Input.GetAxis("Mouse X") * rotateSpeed * Time.deltaTime;
         LookUpDown += Input.GetAxis("Mouse Y") * rotateSpeed * Time.deltaTime;
 
-        LookLeftRight = Mathf.Clamp(LookLeftRight, -45, 45);
-        LookUpDown = Mathf.Clamp(LookUpDown, -45, 45);
+        LookLeftRight = Mathf.Clamp(LookLeftRight, -X, X);
+        LookUpDown = Mathf.Clamp(LookUpDown, -Y, Y);
     }
 
 	void LateUpdate() {
