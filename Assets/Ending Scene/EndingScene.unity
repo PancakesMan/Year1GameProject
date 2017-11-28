@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0056247804, g: 0.0055973534, b: 0.0056247804, a: 1}
+  m_IndirectSpecularColor: {r: 0.0056279744, g: 0.0055943513, b: 0.0056279744, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -2893,7 +2893,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4985510194477806, guid: 1a752cd2fe6f13e44af0c50c43a4c267, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
+<<<<<<< HEAD
       value: 180
+=======
+      value: 169.378
+      objectReference: {fileID: 0}
+    - target: {fileID: 4985510194477806, guid: 1a752cd2fe6f13e44af0c50c43a4c267, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -0.81200004
+>>>>>>> abaf36e0d663ecc5a476747659caee88bdc4a64e
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1a752cd2fe6f13e44af0c50c43a4c267, type: 2}
@@ -4375,7 +4383,6 @@ GameObject:
   - component: {fileID: 1717944016}
   - component: {fileID: 1717944015}
   - component: {fileID: 1717944014}
-  - component: {fileID: 1717944019}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Suicide
@@ -4466,19 +4473,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1717944019
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1717944013}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2782f3638606844fab4e51970729a03, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scene: {fileID: 102900000, guid: ca7a0e24b620a804ca59104637cc2280, type: 3}
-  delay: 10
 --- !u!1001 &1731473013
 Prefab:
   m_ObjectHideFlags: 0

@@ -1,32 +1,26 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityStandardAssets.Characters.ThirdPerson;
 
 public class SuicideTrigger : MonoBehaviour {
 
     private Animator animator;
-    private ThirdPersonUserControl_Custom controller;
-    private _31Toggle fpsToggle;
 
     public Object scene;
     public float delay = 5.0f;
 
 	// Use this for initialization
 	void Start () {
-        GameObject player = GameObject.Find("ThirdPersonController");
-
-        animator = player.GetComponent<Animator>();
-        controller = player.GetComponent<ThirdPersonUserControl_Custom>();
-        fpsToggle = GameObject.Find("PlagueDoctorPrefab").GetComponent<_31Toggle>();
-    }
-
-    void OnDisable()
+        animator = GetComponent<Animator>();
+	}
+	
+	void OnTriggerExit(Collider other)
     {
-        controller.userHasControl = false;
-        fpsToggle.active = false;
-        animator.Play("Commit");
-        Invoke("LoadFinalScene", delay);
+        if (other.tag == "Suicide")
+        {
+            animator.Play("Commit");
+            Invoke("LoadFinalScene", delay);
+        }
     }
 
     void LoadFinalScene()
