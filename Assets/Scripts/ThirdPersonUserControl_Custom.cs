@@ -20,7 +20,6 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         private float crouch_cd = 0.25f;          // Cooldown for crouching toggle
 
         public bool userHasControl = true;        // Used to disable player controls
-        public float hideTextDelay = 1.0f;
         public GameObject text;
         [HideInInspector]
         public NavMeshAgent followingLad;
@@ -71,7 +70,6 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         void ShowText()
         {
             text.SetActive(true);
-            Invoke("HideText", hideTextDelay)
         }
 
         public void HideText()
