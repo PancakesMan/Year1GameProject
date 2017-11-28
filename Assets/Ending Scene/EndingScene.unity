@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0056247804, g: 0.0055973534, b: 0.0056247804, a: 1}
+  m_IndirectSpecularColor: {r: 0.0056279744, g: 0.0055943513, b: 0.0056279744, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -4320,7 +4320,7 @@ GameObject:
   - component: {fileID: 1717944014}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Suicide
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
