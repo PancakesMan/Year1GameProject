@@ -976,6 +976,7 @@ MonoBehaviour:
   altDialogueLines: []
   altDialogueOption: 0
   alreadyTriggered: 0
+  enableModeChangeUponCompletion: 0
   characterTimeout: 0
   dialogueBox: {fileID: 995180870}
   textBackground: {fileID: 1771718747}
@@ -2458,6 +2459,7 @@ MonoBehaviour:
   altDialogueLines: []
   altDialogueOption: 0
   alreadyTriggered: 0
+  enableModeChangeUponCompletion: 1
   characterTimeout: 0
   dialogueBox: {fileID: 995180870}
   textBackground: {fileID: 1771718747}
@@ -2930,6 +2932,7 @@ MonoBehaviour:
   altDialogueLines: []
   altDialogueOption: 0
   alreadyTriggered: 0
+  enableModeChangeUponCompletion: 0
   characterTimeout: 0
   dialogueBox: {fileID: 995180870}
   textBackground: {fileID: 1771718747}
