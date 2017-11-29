@@ -37,7 +37,7 @@ public class shooting : MonoBehaviour {
             ChangeModeController.cd = -3.6f;
 
             // Reset the crossbow
-            Invoke("ResetXbow", 2);
+            Invoke("ResetXbow", 0.5f);
         }
 	}
 

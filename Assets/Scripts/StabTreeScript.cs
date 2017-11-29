@@ -18,7 +18,7 @@ public class StabTreeScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKey(KeyCode.E))
+		if (inTrigger && Input.GetKey(KeyCode.E))
         {
             player.Play("Carve");
             Invoke("ShowText", delay);
