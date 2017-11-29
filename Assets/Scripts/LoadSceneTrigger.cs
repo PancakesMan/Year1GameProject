@@ -6,11 +6,11 @@ using UnityEngine.SceneManagement;
 public class LoadSceneTrigger : MonoBehaviour {
 
     // Scene object to load upon entering trigger
-    public Object nextScene;
+    public int nextScene;
 
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
-            SceneManager.LoadScene(nextScene.name);
+            SceneManager.LoadScene(nextScene);
     }
 }
