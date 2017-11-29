@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class LoadSceneTrigger : MonoBehaviour {
 
+    // Scene object to load upon entering trigger
     public Object nextScene;
 
     void OnTriggerEnter(Collider other)

@@ -5,18 +5,14 @@ using UnityEngine.AI;
 using UnityStandardAssets.Characters.ThirdPerson;
 
 public class EggScript : MonoBehaviour {
-
-    public GameObject moonWhite;
-    public GameObject moonGreen;
-
     [HideInInspector]
-    public bool LadHatched = false;
+    public bool LadHatched = false;  // Has the Lad been hatched from this egg?
     [HideInInspector]
-    public NavMeshAgent Lad;
+    public NavMeshAgent Lad;         // NavMeshAgent of the Lad hatched from the egg
     Animator LadAnimator;
 
 
-    public bool arrowCoated = false;
+    public bool arrowCoated = false; // Is the arrow coated?
 
     void Start()
     {
@@ -24,27 +20,12 @@ public class EggScript : MonoBehaviour {
         Lad = transform.parent.Find("LadAnimation").GetComponent<NavMeshAgent>();
     }
 
-	// Update is called once per frame
-	void Update ()
-    {
-        if (arrowCoated == true)
-        {
-            //moonGreen.SetActive(true);
-            //moonWhite.SetActive(false);
-        }
-        else if (arrowCoated == false)
-        {
-            //moonWhite.SetActive(true);
-            //moonGreen.SetActive(false);
-        }
-    }
-
     void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
         {
-            other.GetComponent<ThirdPersonUserControl_Custom>().collidingWithEgg = true;
-            other.GetComponent<ThirdPersonUserControl_Custom>().egg = this;
+            other.GetComponent<ThirdPersonUserControl_Custom>().collidingWithEgg = true;  // Update player to be colliding with egg
+            other.GetComponent<ThirdPersonUserControl_Custom>().egg = this;               // Update player egg to this
             if (Input.GetKeyDown(KeyCode.E))
             {
                 Debug.Log("Arrow Coated!");

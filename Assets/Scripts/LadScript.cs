@@ -4,13 +4,14 @@ using UnityEngine;
 using UnityEngine.AI;
 
 public class LadScript : MonoBehaviour {
-    private NavMeshAgent agent;
-    private Animator animator;
-    private Vector3 position;
+    private NavMeshAgent agent;           // NavMeshAgent on the Lad
+    private Animator animator;            // Animator on the Lad
+    private Vector3 position;             // Initial position of the Lad
 
-    public bool nearBlockade = false, specialBlockade = false;
-    public bool eatenBlockade = false;
-    private GameObject nearestBlockade;
+    public bool nearBlockade = false;     // Is the Lad near a blockade?
+    public bool specialBlockade = false;  // Is the Lad near a special blockade?
+    public bool eatenBlockade = false;    // Has the lad eaten a blockade?
+    private GameObject nearestBlockade;   // Blockade object to eat
 
 	// Use this for initialization
 	void Start()
@@ -25,12 +26,13 @@ public class LadScript : MonoBehaviour {
     {
         if (nearBlockade)
         {
-            animator.Play("Lad Eating");
-            StartCoroutine(DisableBlockade());
-            StartCoroutine(ReturnToEgg());
+            animator.Play("Lad Eating");        // Play the Lad Eating animation
+            StartCoroutine(DisableBlockade());  // Start coroutine to disable blockade
+            StartCoroutine(ReturnToEgg());      // Start coroutine to make Lad return to the egg
         }
 	}
 
+    // Coroutine to disable blockade after eating animation
     IEnumerator DisableBlockade()
     {
         yield return new WaitForSecondsRealtime(2);
@@ -40,6 +42,7 @@ public class LadScript : MonoBehaviour {
         nearBlockade = false;
     }
 
+    // Coroutine to make Lad return to egg after eating animation
     IEnumerator ReturnToEgg()
     {
         yield return new WaitForSecondsRealtime(2);
@@ -51,17 +54,17 @@ public class LadScript : MonoBehaviour {
     {
         if (other.gameObject.tag == "WoodBlockade")
         {
-            nearBlockade = true;
-            nearestBlockade = other.gameObject;
+            nearBlockade = true;                  // Lad is near a blockade
+            nearestBlockade = other.gameObject;   // The blockade the Lad is near what we're colliding with
         }
         else if (other.gameObject.tag == "SpecialWoodBlockade")
         {
-            GetComponent<Rigidbody>().isKinematic = true;
-            specialBlockade = true;
-            agent.isStopped = true;
-            animator.Play("Lad Eating");
+            GetComponent<Rigidbody>().isKinematic = true; // Make the Lad kinematic so it can't be pushed
+            specialBlockade = true;                       // Lad is near a special blockade
+            agent.isStopped = true;                       // Disable Lad's NavmeshAgent
+            animator.Play("Lad Eating");                  // Play the Lad's eating animation
         }
         else if (other.gameObject.tag == "Egg" && eatenBlockade)
-            gameObject.SetActive(false);
+            gameObject.SetActive(false);                  // Lad "returns" to it's egg once it's eaten a blockade
     }
 }

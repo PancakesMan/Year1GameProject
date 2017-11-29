@@ -5,12 +5,12 @@ using UnityStandardAssets.Characters.ThirdPerson;
 
 public class SuicideTrigger : MonoBehaviour {
 
-    private Animator animator;
-    private ThirdPersonUserControl_Custom controller;
-    private _31Toggle fpsToggle;
+    private Animator animator;                           // Animator for the player
+    private ThirdPersonUserControl_Custom controller;    // Controller for the player
+    private _31Toggle fpsToggle;                         // Change Mode toggle script on the player
 
-    public Object scene;
-    public float delay = 5.0f;
+    public Object scene;                                 // Next Scene to load after suiciding
+    public float delay = 5.0f;                           // Delay to move to next scene after starting suicide animation
 
 	// Use this for initialization
 	void Start () {
@@ -23,9 +23,14 @@ public class SuicideTrigger : MonoBehaviour {
 
     void OnDisable()
     {
+        // Remove player's control
         controller.userHasControl = false;
         fpsToggle.active = false;
+
+        // Play the Commit animation
         animator.Play("Commit");
+
+        // Load the final scene after delay time
         Invoke("LoadFinalScene", delay);
     }
 

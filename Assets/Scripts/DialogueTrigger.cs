@@ -7,22 +7,19 @@ using UnityStandardAssets.Characters.ThirdPerson;
 
 public class DialogueTrigger : MonoBehaviour {
 
-    List<string> dialogToUse = new List<string>();
-    public List<string> dialogueLines = new List<string>();
-    public List<string> altDialogueLines = new List<string>();
-    public bool altDialogueOption = false;
-    public bool alreadyTriggered = false;
-    public bool enableModeChangeUponCompletion = true;
-    public float characterTimeout;
+    public List<string> dialogueLines = new List<string>(); // Dialogue being shown to the player
+    public bool alreadyTriggered = false;                   // Has this cutscene been triggered before?
+    public bool enableModeChangeUponCompletion = true;      // Can user switch from third to first person mode after?
+    public float characterTimeout;                          // Time to wait between printing each letter of the line
 
-    // Below, add your character controller name. e.g. CharControlCustom charController;
-    ThirdPersonUserControl_Custom charUserControl;
-    _31Toggle modeController;
+    ThirdPersonUserControl_Custom charUserControl;          // Player's Controller Script
+    _31Toggle modeController;                               // Player's mode toggle script
     public Text dialogueBox;
-    public GameObject textBackground;
+    public GameObject textBackground;                       
 
-    int currentLine = 0;
-    bool currentlyActive, cr_running = false;
+    int currentLine = 0;       // Line of dialogue currently showing
+    bool currentlyActive;      // Is the cutscene active?                            
+    bool cr_running = false;   // Is the coroutine running?
 
     void Start()
     {
@@ -34,39 +31,29 @@ public class DialogueTrigger : MonoBehaviour {
         Debug.Log("Trigger entered by " + other.gameObject);
         if (other.tag == "Player" && !alreadyTriggered)
         {
-            modeController.active = false;
-            if (altDialogueOption)
-            {
-                dialogToUse = altDialogueLines;
-            }
-            else
-            {
-                dialogToUse = dialogueLines;
-            }
+            modeController.active = false;  // Disable changing first/third person mode
+            textBackground.SetActive(true); // active background for text
 
-            textBackground.SetActive(true);
-            //Insert character controller name to dissable controls during dialogue 
+            // Get the player's controller script component
             charUserControl = other.GetComponent<ThirdPersonUserControl_Custom>();
-            if (charUserControl != null)
-            {
-                charUserControl.userHasControl = false;
-            }
+            charUserControl.userHasControl = false; // Disable player controls
 
-            StartCoroutine(DisplayText(dialogToUse[currentLine++]));
-            alreadyTriggered = true;
-            currentlyActive = true;
+            // Start coroutine to display text 1 letter at a time
+            StartCoroutine(DisplayText(dialogueLines[currentLine++]));
+            alreadyTriggered = true; // Set cutscene trigger to activated
+            currentlyActive = true;  // Cutscene is currently activated
         }
     }
 
     void OnTriggerStay(Collider other)
     {
-        if (Input.GetButtonDown("Fire1") && other.tag == "Player" && currentlyActive /*&& (Time.time > lastClickTime + 0.1f)*/ &&!cr_running)
+        if (Input.GetButtonDown("Fire1") && other.tag == "Player" && currentlyActive &&!cr_running)
         {
             dialogueBox.text = "";
             Debug.Log("next line triggered by " + other.gameObject + " at time " + Time.time);
-            if (dialogToUse.Count > currentLine)
+            if (dialogueLines.Count > currentLine)
             {
-                StartCoroutine(DisplayText(dialogToUse[currentLine++]));
+                StartCoroutine(DisplayText(dialogueLines[currentLine++]));
             }
             else
             {
@@ -79,15 +66,16 @@ public class DialogueTrigger : MonoBehaviour {
         }
     }
 
+    // Displays string one character at a time
     IEnumerator DisplayText(string text)
     {
-        cr_running = true;
+        cr_running = true;       // Coroutine is running
         foreach(char c in text)
         {
             dialogueBox.text += c;
             yield return new WaitForSecondsRealtime(characterTimeout);
         }
-        cr_running = false;
+        cr_running = false;      // Coroutine is not running
     }
 
 }

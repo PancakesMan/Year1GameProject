@@ -2,44 +2,38 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-	public class MouseAimCamera : MonoBehaviour {
-		
-	public GameObject target;
-	public float rotateSpeed = 10;
-    public float X, Y;
-
-    public float LookLeftRight, LookUpDown;
+public class MouseAimCamera : MonoBehaviour
+{
+	public GameObject target;                 // Object Camera is looking at
+	public float rotateSpeed = 10;            // Speed the Camera rotates
+    public float X, Y;                        // Min/Max X/Y rotation
+    public float LookLeftRight, LookUpDown;   // The angle the Camera is looking on X/Y
 
 	void Start() {
+        // Make the target this objects parent
 		transform.parent = target.transform;
-		//transform.LookAt(target.transform);
 
+        // Hide the cursor from the user
+        // and lock the cursor to the center of the screen
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
     }
 
 	void Update()
 	{
+        // Increase/Decrease the angle you are looking on the X axis
         LookLeftRight += Input.GetAxis("Mouse X") * rotateSpeed * Time.deltaTime;
+
+        // Increase/Decrease the angle you are looking on the Y axis
         LookUpDown += Input.GetAxis("Mouse Y") * rotateSpeed * Time.deltaTime;
 
+        // Clamp the angle you are looking on X/Y axis
         LookLeftRight = Mathf.Clamp(LookLeftRight, -X, X);
         LookUpDown = Mathf.Clamp(LookUpDown, -Y, Y);
     }
 
 	void LateUpdate() {
-        //float horizontal = Input.GetAxis("Mouse X") * rotateSpeed;
-        //transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, horizontal);
-
-        //float vertical = Input.GetAxis("Mouse Y") * -rotateSpeed;
+        // Set the local euler angles of the Camera
         transform.localEulerAngles = new Vector3(-LookUpDown, LookLeftRight, 0);
-
-        // Vertical, Horizontal
-        //target.transform.Rotate(vertical, horizontal, 0);
-
-        //GameObject player = GameObject.FindGameObjectWithTag("Player");
-        //target.transform.forward = player.transform.forward + (LookLeftRight * player.transform.right) + (LookUpDown * player.transform.up);
-        //Mathf.Clamp(target.transform.localEulerAngles.x, -45, 45);
-        //Mathf.Clamp(target.transform.localEulerAngles.y, -45, 45);
     }
 }

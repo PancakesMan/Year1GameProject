@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class crossbowPickup : MonoBehaviour {
 
-	public GameObject crossbow;
-    public GameObject backCrossbow;
-	public GameObject thirdTalking; 
-	public GameObject fog1;
+	public GameObject crossbow;        // crossbow object in the scene to disable
+    public GameObject backCrossbow;    // crossbow object on player model to enable
+	public GameObject thirdTalking;    // cutscene to activate
+	public GameObject fog1;            // fog to be disabled, allowing player to continue
 
-    Animator animator;
+    Animator animator;                 // animator attached to the player
 
     void Start()
     {
