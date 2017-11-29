@@ -18,7 +18,8 @@ public class ChangeScene : MonoBehaviour {
 	public void ResetLevel ()
     {
 		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-	}
+        Time.timeScale = 1;
+    }
 
 	public void QuitGame ()
     {
