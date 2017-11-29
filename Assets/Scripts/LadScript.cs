@@ -24,6 +24,7 @@ public class LadScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update()
     {
+        GetComponent<Rigidbody>().velocity = Vector3.zero;
         if (nearBlockade)
         {
             animator.Play("Lad Eating");        // Play the Lad Eating animation
