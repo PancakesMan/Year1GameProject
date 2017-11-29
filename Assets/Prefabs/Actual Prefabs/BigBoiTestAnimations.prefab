@@ -1189,15 +1189,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1667794562944112}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 24.19, y: 22.716, z: 27.662}
+  m_LocalRotation: {x: -0, y: -0.86737734, z: -0, w: 0.4976511}
+  m_LocalPosition: {x: 200.22, y: 19.987705, z: 198.39}
   m_LocalScale: {x: 0.8061095, y: 0.8061095, z: 0.728495}
   m_Children:
   - {fileID: 4679720486915842}
   - {fileID: 4873015858391492}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -120.311005, z: 0}
 --- !u!4 &4926331230615334
 Transform:
   m_ObjectHideFlags: 1
@@ -1316,7 +1316,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c86e07cc348bf1b48abfa4f38fb4b597, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1428,9 +1428,10 @@ MonoBehaviour:
   waypoints:
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
   waitTimeBetweenWaypoints: 5
   viewingAngle: 120
-  viewingDistance: 50
+  viewingDistance: 10
 --- !u!137 &137102055560837390
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

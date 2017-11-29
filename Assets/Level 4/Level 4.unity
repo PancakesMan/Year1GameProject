@@ -79831,6 +79831,7 @@ MonoBehaviour:
   alreadyTriggered: 0
   enableModeChangeUponCompletion: 1
   characterTimeout: 0
+  autoAdvance: 0
   dialogueBox: {fileID: 60617822}
   textBackground: {fileID: 729319421}
 --- !u!23 &1226470123
@@ -80070,11 +80071,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114863801734021034, guid: 18e0241eda10c4544aec087be67d90fe,
-        type: 2}
-      propertyPath: waypoints.Array.size
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 4886437931360378, guid: 18e0241eda10c4544aec087be67d90fe, type: 2}
       propertyPath: m_LocalPosition.x
       value: 200.22
@@ -80107,14 +80103,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
-    - target: {fileID: 1667794562944112, guid: 18e0241eda10c4544aec087be67d90fe, type: 2}
-      propertyPath: m_Name
-      value: BigBoiTestAnimations (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4886437931360378, guid: 18e0241eda10c4544aec087be67d90fe, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -120.311005
-      objectReference: {fileID: 0}
     - target: {fileID: 114863801734021034, guid: 18e0241eda10c4544aec087be67d90fe,
         type: 2}
       propertyPath: waypoints.Array.data[0]
@@ -80130,10 +80118,9 @@ Prefab:
       propertyPath: waypoints.Array.data[2]
       value: 
       objectReference: {fileID: 1970741218}
-    - target: {fileID: 114863801734021034, guid: 18e0241eda10c4544aec087be67d90fe,
-        type: 2}
-      propertyPath: viewingDistance
-      value: 10
+    - target: {fileID: 1667794562944112, guid: 18e0241eda10c4544aec087be67d90fe, type: 2}
+      propertyPath: m_Name
+      value: BigBoiTestAnimations (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 18e0241eda10c4544aec087be67d90fe, type: 2}
@@ -85206,6 +85193,7 @@ MonoBehaviour:
   alreadyTriggered: 0
   enableModeChangeUponCompletion: 1
   characterTimeout: 0
+  autoAdvance: 0
   dialogueBox: {fileID: 60617822}
   textBackground: {fileID: 729319421}
 --- !u!23 &1374882337
@@ -110445,6 +110433,7 @@ MonoBehaviour:
   alreadyTriggered: 0
   enableModeChangeUponCompletion: 1
   characterTimeout: 0
+  autoAdvance: 0
   dialogueBox: {fileID: 60617822}
   textBackground: {fileID: 729319421}
 --- !u!23 &1914198338
