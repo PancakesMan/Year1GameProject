@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0056225536, g: 0.0055885552, b: 0.0056225536, a: 1}
+  m_IndirectSpecularColor: {r: 0.005641474, g: 0.005581758, b: 0.005641474, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -1081,7 +1081,7 @@ MonoBehaviour:
   - A Crossbow...
   - Might come in handy.
   alreadyTriggered: 0
-  enableModeChangeUponCompletion: 1
+  enableModeChangeUponCompletion: 0
   characterTimeout: 0
   dialogueBox: {fileID: 995180870}
   textBackground: {fileID: 68631699}
@@ -2438,7 +2438,7 @@ MonoBehaviour:
   dialogueLines:
   - Okay, time to find a way out of this place.
   alreadyTriggered: 0
-  enableModeChangeUponCompletion: 1
+  enableModeChangeUponCompletion: 0
   characterTimeout: 0
   dialogueBox: {fileID: 995180870}
   textBackground: {fileID: 68631699}
@@ -2907,7 +2907,7 @@ MonoBehaviour:
   - A wound thats barely sealed...
   - 'What happened to me? '
   alreadyTriggered: 0
-  enableModeChangeUponCompletion: 1
+  enableModeChangeUponCompletion: 0
   characterTimeout: 0.25
   dialogueBox: {fileID: 995180870}
   textBackground: {fileID: 68631699}
