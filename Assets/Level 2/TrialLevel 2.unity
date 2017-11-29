@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.005627108, g: 0.005596348, b: 0.005627108, a: 1}
+  m_IndirectSpecularColor: {r: 0.0056225536, g: 0.0055885552, b: 0.0056225536, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -3775,8 +3775,6 @@ MonoBehaviour:
   - "It showed symptoms of the Black Death\u2026."
   - "Whatever the case, whoever wrote these carvings seems to want to help\u2026"
   - I hope I get the opportunity to thank them.
-  altDialogueLines: []
-  altDialogueOption: 0
   alreadyTriggered: 0
   enableModeChangeUponCompletion: 1
   characterTimeout: 0
@@ -4545,8 +4543,6 @@ MonoBehaviour:
   - I can't get through here...
   - Hmm...
   - One of those creatures could eat through this...
-  altDialogueLines: []
-  altDialogueOption: 0
   alreadyTriggered: 0
   enableModeChangeUponCompletion: 1
   characterTimeout: 0
@@ -5988,11 +5984,6 @@ Prefab:
       propertyPath: m_Name
       value: LadAndEggPrefab (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 195266385527558812, guid: 19b3ceea81cee6c4e995b3d6c119967e,
-        type: 2}
-      propertyPath: m_Speed
-      value: 3
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19b3ceea81cee6c4e995b3d6c119967e, type: 2}
   m_IsPrefabParent: 0
@@ -6372,8 +6363,6 @@ MonoBehaviour:
   - Another one of the creatures...
   - If i douse my arrow with it's mucus-
   - I should be able to direct it like the last one.
-  altDialogueLines: []
-  altDialogueOption: 0
   alreadyTriggered: 0
   enableModeChangeUponCompletion: 1
   characterTimeout: 0

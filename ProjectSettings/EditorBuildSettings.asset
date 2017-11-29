@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Level 2/ControlsMenu.unity
     guid: d08b1ce37e00ac6428e0dff54c990b34
   - enabled: 1
+    path: Assets/Ending Scene/Opening Quote.unity
+    guid: 39bacb0aa3437784781ecf48d859044a
+  - enabled: 1
     path: Assets/Level 1/Scenes/Tree.unity
     guid: 6d6a2d2a9a60f684d919756fdd574df3
   - enabled: 1
