@@ -16,18 +16,25 @@ public class shooting : MonoBehaviour {
     private Animator xbowAnimator;                  // Animator for the crossbow
     private ThirdPersonUserControl_Custom player;   // Control script on the player object
     private _31Toggle ChangeModeController;         // Change Mode script on the player
+    private float shooting_cd;                      // Cooldown for shooting
 
     void Start()
     {
         xbowAnimator = GetComponent<Animator>();
         player = ThirdPersonObject.GetComponent<ThirdPersonUserControl_Custom>();
         ChangeModeController = GameObject.Find("PlagueDoctorPrefab").GetComponent<_31Toggle>();
+        shooting_cd = 0.0f;
     }
 
     void Update ()
 	{
+        shooting_cd -= Time.deltaTime;
+
         // If the player left clicked
-		if (Input.GetMouseButtonDown (0)) {
+        if (Input.GetMouseButtonDown(0) && shooting_cd <= 0.0f) {
+            // Reset shooting cooldown
+            shooting_cd = 3.6f;
+
             // Set the xbowFired bool to true so the firing animation plays
             xbowAnimator.SetBool("xbowFired", true);
             GetComponent<AudioSource>().PlayOneShot(ShootingSound);
