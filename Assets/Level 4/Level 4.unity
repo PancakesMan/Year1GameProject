@@ -117700,6 +117700,11 @@ Prefab:
       propertyPath: pauseMenu
       value: 
       objectReference: {fileID: 2110472301}
+    - target: {fileID: 114868449855496744, guid: 1a752cd2fe6f13e44af0c50c43a4c267,
+        type: 2}
+      propertyPath: ShootingSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 8bdeb7c277f854b4baec6a669b399795, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1a752cd2fe6f13e44af0c50c43a4c267, type: 2}
   m_IsPrefabParent: 0

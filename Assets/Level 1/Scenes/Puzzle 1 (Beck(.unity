@@ -5660,7 +5660,7 @@ Transform:
   m_Children:
   - {fileID: 1626360978}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 21.182001}
 --- !u!1001 &846037564
 Prefab:
@@ -6704,6 +6704,11 @@ Prefab:
       propertyPath: text
       value: 
       objectReference: {fileID: 756574940}
+    - target: {fileID: 114868449855496744, guid: 1a752cd2fe6f13e44af0c50c43a4c267,
+        type: 2}
+      propertyPath: ShootingSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 8bdeb7c277f854b4baec6a669b399795, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1a752cd2fe6f13e44af0c50c43a4c267, type: 2}
   m_IsPrefabParent: 0
