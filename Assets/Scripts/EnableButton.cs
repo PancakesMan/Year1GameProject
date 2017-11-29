@@ -15,5 +15,7 @@ public class EnableButton : MonoBehaviour {
     void Enable()
     {
         Button.SetActive(true);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 }
