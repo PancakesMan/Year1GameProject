@@ -30,6 +30,7 @@ public class shooting : MonoBehaviour {
 		if (Input.GetMouseButtonDown (0)) {
             // Set the xbowFired bool to true so the firing animation plays
             xbowAnimator.SetBool("xbowFired", true);
+            GetComponent<AudioSource>().PlayOneShot(ShootingSound);
 
             // Add a cooldown to the Change Mode script so you
             // can't change mode until animation is finished
@@ -44,7 +45,6 @@ public class shooting : MonoBehaviour {
     {
         // Set xbowFired to false so the animation can play again
         xbowAnimator.SetBool("xbowFired", false);
-        GetComponent<AudioSource>().PlayOneShot(ShootingSound);
 
         RaycastHit hit;
         Ray ray = mainCam.ScreenPointToRay(Input.mousePosition); // Raycast to where the arrow is pointing
