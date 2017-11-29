@@ -847,7 +847,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1335249728456058
 GameObject:
   m_ObjectHideFlags: 1
@@ -1614,6 +1614,7 @@ GameObject:
   - component: {fileID: 4685189025454016}
   - component: {fileID: 95809541640233680}
   - component: {fileID: 114868449855496744}
+  - component: {fileID: 82119423436322158}
   m_Layer: 0
   m_Name: FPS
   m_TagString: Untagged
@@ -4919,15 +4920,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1771244104804328}
-  m_LocalRotation: {x: -0, y: -0.9670537, z: -0, w: 0.25457263}
-  m_LocalPosition: {x: 104.94, y: 10.14, z: 41.91}
+  m_LocalRotation: {x: 0, y: -0.018543027, z: 0, w: 0.9998281}
+  m_LocalPosition: {x: 45.4, y: 47.81, z: 92.04}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4153413146155646}
   - {fileID: 4160803879968124}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -150.503, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -2.125, z: 0}
 --- !u!4 &4991304034501556
 Transform:
   m_ObjectHideFlags: 1
@@ -5124,6 +5125,86 @@ AudioListener:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1776245337971770}
   m_Enabled: 1
+--- !u!82 &82119423436322158
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1653426027341616}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.2
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!82 &82395273999112538
 AudioSource:
   m_ObjectHideFlags: 1
@@ -5135,7 +5216,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 29b8cab4a61d9b54bba1afcad95eb255, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.3
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -5327,7 +5408,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: e9dfe0dd3a0f49c4f9c7681099ed6679, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -5532,7 +5613,7 @@ MonoBehaviour:
   - {fileID: 1982168021917864}
   FirstPersonObjects:
   - {fileID: 1308751669425610}
-  active: 1
+  active: 0
   cd: 0
 --- !u!114 &114664330801004762
 MonoBehaviour:
@@ -5610,6 +5691,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCam: {fileID: 20583203296245566}
   ThirdPersonObject: {fileID: 1982168021917864}
+  ShootingSound: {fileID: 8300000, guid: 8bdeb7c277f854b4baec6a669b399795, type: 3}
   coated: 0
 --- !u!114 &114883748128408062
 MonoBehaviour:

@@ -204,42 +204,16 @@ Prefab:
       propertyPath: fog1
       value: 
       objectReference: {fileID: 416662632}
-    - target: {fileID: 114664330801004762, guid: 1a752cd2fe6f13e44af0c50c43a4c267,
-        type: 2}
-      propertyPath: pauseMenu
-      value: 
-      objectReference: {fileID: 1630666521}
-    - target: {fileID: 1771244104804328, guid: 1a752cd2fe6f13e44af0c50c43a4c267, type: 2}
-      propertyPath: m_Name
-      value: PlagueDoctorPrefab
-      objectReference: {fileID: 0}
-    - target: {fileID: 1332712660072882, guid: 1a752cd2fe6f13e44af0c50c43a4c267, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 114824161666954780, guid: 1a752cd2fe6f13e44af0c50c43a4c267,
         type: 2}
       propertyPath: text
       value: 
       objectReference: {fileID: 995180869}
-    - target: {fileID: 114431753636285932, guid: 1a752cd2fe6f13e44af0c50c43a4c267,
+    - target: {fileID: 114664330801004762, guid: 1a752cd2fe6f13e44af0c50c43a4c267,
         type: 2}
-      propertyPath: active
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4985510194477806, guid: 1a752cd2fe6f13e44af0c50c43a4c267, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -190.622
-      objectReference: {fileID: 0}
-    - target: {fileID: 4985510194477806, guid: 1a752cd2fe6f13e44af0c50c43a4c267, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114868449855496744, guid: 1a752cd2fe6f13e44af0c50c43a4c267,
-        type: 2}
-      propertyPath: ShootingSound
+      propertyPath: pauseMenu
       value: 
-      objectReference: {fileID: 8300000, guid: 8bdeb7c277f854b4baec6a669b399795, type: 3}
+      objectReference: {fileID: 1630666521}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1a752cd2fe6f13e44af0c50c43a4c267, type: 2}
   m_IsPrefabParent: 0
