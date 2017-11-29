@@ -8,6 +8,7 @@ public class shooting : MonoBehaviour {
 
 	public Camera mainCam;                          // Camera for First Person
     public GameObject ThirdPersonObject;            // ThirdPersonObject reference
+    public AudioClip ShootingSound;                 // Sound to play when crossbow is shooting
 
     [HideInInspector]
     public bool coated;                             // Is the arrow coated?
@@ -43,6 +44,7 @@ public class shooting : MonoBehaviour {
     {
         // Set xbowFired to false so the animation can play again
         xbowAnimator.SetBool("xbowFired", false);
+        GetComponent<AudioSource>().PlayOneShot(ShootingSound);
 
         RaycastHit hit;
         Ray ray = mainCam.ScreenPointToRay(Input.mousePosition); // Raycast to where the arrow is pointing
