@@ -1019,11 +1019,10 @@ MonoBehaviour:
   - An egg of some sort..
   - And another carving.
   - Who's writing these?
-  altDialogueLines: []
-  altDialogueOption: 0
   alreadyTriggered: 0
   enableModeChangeUponCompletion: 1
   characterTimeout: 0
+  autoAdvance: 0
   dialogueBox: {fileID: 756574941}
   textBackground: {fileID: 1599813138}
 --- !u!23 &251298683
@@ -5661,7 +5660,7 @@ Transform:
   m_Children:
   - {fileID: 1626360978}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 21.182001}
 --- !u!1001 &846037564
 Prefab:
@@ -7198,6 +7197,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4832223186364342, guid: da9ab50c67bcbb948b1605dace642682, type: 2}
       propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114631642244657030, guid: da9ab50c67bcbb948b1605dace642682,
+        type: 2}
+      propertyPath: nextScene
       value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -8960,11 +8964,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueLines:
   - A carving...
-  altDialogueLines: []
-  altDialogueOption: 0
   alreadyTriggered: 0
   enableModeChangeUponCompletion: 1
   characterTimeout: 0
+  autoAdvance: 0
   dialogueBox: {fileID: 756574941}
   textBackground: {fileID: 1599813138}
 --- !u!23 &2069233732

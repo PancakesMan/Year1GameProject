@@ -10,7 +10,7 @@ public class SuicideTrigger : MonoBehaviour {
     private _31Toggle fpsToggle;                         // Change Mode toggle script on the player
     private bool playerTriggered = false;                // Has trigger been entered by the player?
 
-    public Object scene;                                 // Next Scene to load after suiciding
+    public int scene;                                 // Next Scene to load after suiciding
     public float delay = 5.0f;                           // Delay to move to next scene after starting suicide animation
 
 	// Use this for initialization
@@ -52,6 +52,6 @@ public class SuicideTrigger : MonoBehaviour {
 
     void LoadFinalScene()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(scene.name);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(scene);
     }
 }

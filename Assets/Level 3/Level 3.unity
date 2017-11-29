@@ -2997,7 +2997,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23069b58648b824498b60d37db12bcb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: {fileID: 0}
+  nextScene: 0
 --- !u!114 &1213583240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3009,7 +3009,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23069b58648b824498b60d37db12bcb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: {fileID: 0}
+  nextScene: 0
 --- !u!4 &1217617834 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4766166159865296, guid: efd12224721f35340bf94e3766d86f1c,
@@ -4434,6 +4434,11 @@ Prefab:
     - target: {fileID: 4832223186364342, guid: da9ab50c67bcbb948b1605dace642682, type: 2}
       propertyPath: m_LocalScale.x
       value: 3.5099847
+      objectReference: {fileID: 0}
+    - target: {fileID: 114631642244657030, guid: da9ab50c67bcbb948b1605dace642682,
+        type: 2}
+      propertyPath: nextScene
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: da9ab50c67bcbb948b1605dace642682, type: 2}
@@ -8764,7 +8769,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23069b58648b824498b60d37db12bcb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: {fileID: 102900000, guid: 0664379db54f17f41899856f3b9ccd1d, type: 3}
+  nextScene: 0
 --- !u!23 &2128277903
 MeshRenderer:
   m_ObjectHideFlags: 0

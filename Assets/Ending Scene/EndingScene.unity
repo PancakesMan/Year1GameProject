@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0056225536, g: 0.0055885552, b: 0.0056225536, a: 1}
+  m_IndirectSpecularColor: {r: 0.0056256466, g: 0.005595357, b: 0.0056256466, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -1686,6 +1686,7 @@ MonoBehaviour:
   alreadyTriggered: 0
   enableModeChangeUponCompletion: 1
   characterTimeout: 0
+  autoAdvance: 0
   dialogueBox: {fileID: 256366919}
   textBackground: {fileID: 1406879476}
 --- !u!23 &612647021
@@ -3453,7 +3454,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2782f3638606844fab4e51970729a03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: {fileID: 102900000, guid: ca7a0e24b620a804ca59104637cc2280, type: 3}
+  scene: 9
   delay: 10
 --- !u!23 &1188787484
 MeshRenderer:
@@ -5031,6 +5032,7 @@ MonoBehaviour:
   alreadyTriggered: 0
   enableModeChangeUponCompletion: 1
   characterTimeout: 0
+  autoAdvance: 0
   dialogueBox: {fileID: 256366919}
   textBackground: {fileID: 1406879476}
 --- !u!23 &1717944015
@@ -5108,7 +5110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2782f3638606844fab4e51970729a03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: {fileID: 102900000, guid: ca7a0e24b620a804ca59104637cc2280, type: 3}
+  scene: 0
   delay: 10
 --- !u!1001 &1731473013
 Prefab:

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.005627108, g: 0.005596348, b: 0.005627108, a: 1}
+  m_IndirectSpecularColor: {r: 0.0056256466, g: 0.005595357, b: 0.0056256466, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -3177,9 +3177,8 @@ Prefab:
     - target: {fileID: 114631642244657030, guid: da9ab50c67bcbb948b1605dace642682,
         type: 2}
       propertyPath: nextScene
-      value: 
-      objectReference: {fileID: 102900000, guid: e8fce61bd5f35bf46b2a429adf2007da,
-        type: 3}
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: da9ab50c67bcbb948b1605dace642682, type: 2}
   m_IsPrefabParent: 0
@@ -3782,6 +3781,7 @@ MonoBehaviour:
   alreadyTriggered: 0
   enableModeChangeUponCompletion: 1
   characterTimeout: 0
+  autoAdvance: 0
   dialogueBox: {fileID: 256366919}
   textBackground: {fileID: 471834480}
 --- !u!23 &1077880152
@@ -4550,6 +4550,7 @@ MonoBehaviour:
   alreadyTriggered: 0
   enableModeChangeUponCompletion: 1
   characterTimeout: 0
+  autoAdvance: 0
   dialogueBox: {fileID: 256366919}
   textBackground: {fileID: 1995074648}
 --- !u!23 &1198659043
@@ -6375,6 +6376,7 @@ MonoBehaviour:
   alreadyTriggered: 0
   enableModeChangeUponCompletion: 1
   characterTimeout: 0
+  autoAdvance: 0
   dialogueBox: {fileID: 256366919}
   textBackground: {fileID: 903150272}
 --- !u!23 &1685771287

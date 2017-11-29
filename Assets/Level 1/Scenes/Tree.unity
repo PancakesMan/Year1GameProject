@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0056225536, g: 0.0055885552, b: 0.0056225536, a: 1}
+  m_IndirectSpecularColor: {r: 0.0056256466, g: 0.005595357, b: 0.0056256466, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -981,11 +981,10 @@ MonoBehaviour:
   - Something feels off about this tree...
   - A Crossbow...
   - Might come in handy.
-  altDialogueLines: []
-  altDialogueOption: 0
   alreadyTriggered: 0
   enableModeChangeUponCompletion: 0
   characterTimeout: 0
+  autoAdvance: 0
   dialogueBox: {fileID: 995180870}
   textBackground: {fileID: 1771718747}
 --- !u!23 &582114836
@@ -1756,9 +1755,8 @@ Prefab:
     - target: {fileID: 114631642244657030, guid: da9ab50c67bcbb948b1605dace642682,
         type: 2}
       propertyPath: nextScene
-      value: 
-      objectReference: {fileID: 102900000, guid: 33380408feb92b6419d602a00b27413e,
-        type: 3}
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 65597827108884378, guid: da9ab50c67bcbb948b1605dace642682,
         type: 2}
       propertyPath: m_Size.y
@@ -2705,11 +2703,10 @@ MonoBehaviour:
   dialogueLines:
   - I-i can feel something watching me from behind...
   - It's time to find a way out of this place.
-  altDialogueLines: []
-  altDialogueOption: 0
   alreadyTriggered: 0
   enableModeChangeUponCompletion: 1
   characterTimeout: 0
+  autoAdvance: 0
   dialogueBox: {fileID: 995180870}
   textBackground: {fileID: 1771718747}
 --- !u!23 &1000847691
@@ -3178,11 +3175,10 @@ MonoBehaviour:
   - 'A wound that''s barely sealed... '
   - What happened to me?
   - " This place is dead silent, not even any birds\u2026"
-  altDialogueLines: []
-  altDialogueOption: 0
   alreadyTriggered: 0
   enableModeChangeUponCompletion: 0
   characterTimeout: 0
+  autoAdvance: 0
   dialogueBox: {fileID: 995180870}
   textBackground: {fileID: 1771718747}
 --- !u!23 &1260055976
