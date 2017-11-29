@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0056225536, g: 0.0055885552, b: 0.0056225536, a: 1}
+  m_IndirectSpecularColor: {r: 0.005641474, g: 0.005581758, b: 0.005641474, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -1083,6 +1083,7 @@ MonoBehaviour:
   alreadyTriggered: 0
   enableModeChangeUponCompletion: 0
   characterTimeout: 0
+  autoAdvance: 0
   dialogueBox: {fileID: 995180870}
   textBackground: {fileID: 68631699}
 --- !u!23 &582114836
@@ -2440,6 +2441,7 @@ MonoBehaviour:
   alreadyTriggered: 0
   enableModeChangeUponCompletion: 0
   characterTimeout: 0
+  autoAdvance: 0
   dialogueBox: {fileID: 995180870}
   textBackground: {fileID: 68631699}
 --- !u!23 &1000847691
@@ -3007,6 +3009,7 @@ MonoBehaviour:
   alreadyTriggered: 0
   enableModeChangeUponCompletion: 0
   characterTimeout: 0.1
+  autoAdvance: 1
   dialogueBox: {fileID: 995180870}
   textBackground: {fileID: 68631699}
 --- !u!23 &1260055976
@@ -4718,6 +4721,24 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 13eea27aa9faf7e41b7a162588fa229a, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &2081124796 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1534980158403074, guid: 13eea27aa9faf7e41b7a162588fa229a,
+    type: 2}
+  m_PrefabInternal: {fileID: 2081124795}
+--- !u!114 &2081124797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2081124796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25c2e9d8f87348d42be18867aa757a3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Button: {fileID: 1096877887}
+  delay: 7
 --- !u!4 &2085102642 stripped
 Transform:
   m_PrefabParentObject: {fileID: 465486, guid: fbdbb821504812547aabe35c18c1b08b, type: 2}
