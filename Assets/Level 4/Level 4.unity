@@ -32332,6 +32332,45 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c63ea781a273235439e583799176c846, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &512650956
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 512650958}
+  - component: {fileID: 512650957}
+  m_Layer: 0
+  m_Name: Occlusion Area
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!192 &512650957
+OcclusionArea:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 512650956}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_IsViewVolume: 1
+--- !u!4 &512650958
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 512650956}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 51
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &512721360
 GameObject:
   m_ObjectHideFlags: 0
@@ -79718,8 +79757,6 @@ MonoBehaviour:
   - That light, that must be the way out!
   - There are three of them, and nothing to help me get past
   - I know what I have to do, and I need to make sure other people know
-  altDialogueLines: []
-  altDialogueOption: 0
   alreadyTriggered: 0
   enableModeChangeUponCompletion: 1
   characterTimeout: 0
@@ -85095,8 +85132,6 @@ MonoBehaviour:
   - "WHO\u2019S THERE?!...SHOW YOURSELF!......"
   - "I know you\u2019re there, watching me\u2026making these eggs"
   - "Making sure I go deeper, using me like a\u2026like a puppet\u2026"
-  altDialogueLines: []
-  altDialogueOption: 0
   alreadyTriggered: 0
   enableModeChangeUponCompletion: 1
   characterTimeout: 0
@@ -110321,8 +110356,6 @@ MonoBehaviour:
   - "I can\u2019t get out without birthing your creatures, your creatures are the
     cause of the plagues\u2026"
   - I have to get out, I have to tell the world about these things.
-  altDialogueLines: []
-  altDialogueOption: 0
   alreadyTriggered: 0
   enableModeChangeUponCompletion: 1
   characterTimeout: 0
