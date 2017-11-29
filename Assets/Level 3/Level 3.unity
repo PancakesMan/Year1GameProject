@@ -2166,6 +2166,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114863801734021034, guid: 18e0241eda10c4544aec087be67d90fe,
+        type: 2}
+      propertyPath: waypoints.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4886437931360378, guid: 18e0241eda10c4544aec087be67d90fe, type: 2}
       propertyPath: m_LocalPosition.x
       value: 77.58679
@@ -2207,12 +2212,12 @@ Prefab:
         type: 2}
       propertyPath: waypoints.Array.data[1]
       value: 
-      objectReference: {fileID: 1832848267}
+      objectReference: {fileID: 1890746264}
     - target: {fileID: 114863801734021034, guid: 18e0241eda10c4544aec087be67d90fe,
         type: 2}
       propertyPath: waypoints.Array.data[2]
       value: 
-      objectReference: {fileID: 1890746264}
+      objectReference: {fileID: 1832848267}
     - target: {fileID: 114667068660004176, guid: 18e0241eda10c4544aec087be67d90fe,
         type: 2}
       propertyPath: deathMenu
@@ -3765,7 +3770,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4851012822904634, guid: d08592e4a07178742a13251ded1b9354, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.8939056
+      value: 2.94
       objectReference: {fileID: 0}
     - target: {fileID: 4851012822904634, guid: d08592e4a07178742a13251ded1b9354, type: 2}
       propertyPath: m_LocalPosition.z
@@ -3785,6 +3790,15 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 0.8388809
       objectReference: {fileID: 0}
+    - target: {fileID: 4851012822904634, guid: d08592e4a07178742a13251ded1b9354, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1.2885563
+      objectReference: {fileID: 0}
+    - target: {fileID: 23789011265892678, guid: d08592e4a07178742a13251ded1b9354,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f6cf4664a5a680844a486a479d409615, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d08592e4a07178742a13251ded1b9354, type: 2}
   m_IsPrefabParent: 0
