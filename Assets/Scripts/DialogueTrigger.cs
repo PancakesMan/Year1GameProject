@@ -11,6 +11,7 @@ public class DialogueTrigger : MonoBehaviour {
     public bool alreadyTriggered = false;                   // Has this cutscene been triggered before?
     public bool enableModeChangeUponCompletion = true;      // Can user switch from third to first person mode after?
     public float characterTimeout;                          // Time to wait between printing each letter of the line
+    bool autoAdvance = false;                               // Automatically play the next line
 
     ThirdPersonUserControl_Custom charUserControl;          // Player's Controller Script
     _31Toggle modeController;                               // Player's mode toggle script
@@ -47,7 +48,7 @@ public class DialogueTrigger : MonoBehaviour {
 
     void OnTriggerStay(Collider other)
     {
-        if (Input.GetButtonDown("Fire1") && other.tag == "Player" && currentlyActive &&!cr_running)
+        if ((Input.GetButtonDown("Fire1") || autoAdvance) && other.tag == "Player" && currentlyActive && !cr_running)
         {
             dialogueBox.text = "";
             Debug.Log("next line triggered by " + other.gameObject + " at time " + Time.time);
